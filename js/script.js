@@ -1,6 +1,6 @@
-const gifContainer = document.querySelector('.gifContainer')
-const input = document.querySelector('.gifType')
-const form = document.querySelector('.gifForm')
+const gifContainer = document.querySelector('.gif-container')
+const input = document.querySelector('.gif-type')
+const form = document.querySelector('.gif-form')
 
 form.addEventListener('submit', (e) => {
     e.preventDefault()
