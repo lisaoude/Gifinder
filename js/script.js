@@ -2,8 +2,8 @@ const gifContainer = document.querySelector('.gif-container')
 const input = document.querySelector('.gif-type')
 const form = document.querySelector('.gif-form')
 
-form.addEventListener('submit', (e) => {
-    e.preventDefault()
+form.addEventListener('submit', (event) => {
+    event.preventDefault()
     gifContainer.innerHTML = ''
     fetchGifs(input.value)
 })
@@ -17,8 +17,8 @@ const fetchGifs = (inputValue) => {
 
     fetch(url)
         .then(
-            (res) => {
-                res.json().then((data) => {
+            (response) => {
+                response.json().then((data) => {
                     showGifs(data.data)
                 })
             }
