@@ -9,11 +9,10 @@ form.addEventListener('submit', (event) => {
 })
 
 const fetchGifs = (inputValue) => {
-    const
-        endpoint = 'https://api.giphy.com/v1/gifs/search?q=',
-        key = 'JzbS3qH49ykiVKnHZx0z5M0gjNPVMbh3',
-        limit = 20,
-        url = `${endpoint}${inputValue}&api_key=${key}&limit=${limit}`
+    const endpoint = 'https://api.giphy.com/v1/gifs/search?q='
+    const key = 'JzbS3qH49ykiVKnHZx0z5M0gjNPVMbh3'
+    const limit = 20
+    const url = `${endpoint}${inputValue}&api_key=${key}&limit=${limit}`
 
     fetch(url)
         .then(
