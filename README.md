@@ -1,7 +1,13 @@
 # Web App From Scratch @cmda-minor-web 2020 - 2021
 
+# App beschrijving
+Met deze app kan de gebruiker gifjes zoeken door een woord naar keuze in te vullen in het zoekveld. Vervolgens worden er 20 gifjes die voldoen aan dit trefwoord getoond aan de gebruiker.
 
-### Week 1 - Hello API 🐒
+[Gebruikte API](https://developers.giphy.com/docs/api/)
+
+
+# Logboek
+## Week 1 - Hello API 🐒
 
 Goal: Retrieve data from an API and render it in an overview page.
 
@@ -9,12 +15,12 @@ Goal: Retrieve data from an API and render it in an overview page.
 
 [Slides](https://docs.google.com/presentation/d/1hXfgIhBzJ2QXDmpKpMcx7G-a9R_fVrcPdeOyM3G0I00/edit?usp=sharing)
 
-#### How it went
-##### Monday, February 1st
+### How it went
+#### Monday, February 1st
 Introductie op het vak gehad & mijn [visitekaartje](https://lisaoude.github.io/kickoff-2021/) gemaakt.
 
-##### Tuesday, February 2nd
-Persoonlijke data in de Tribe API gezet. Vervolgens met veel hulp data opgehaald uit mijn [API](https://developers.giphy.com/docs/api/) 
+#### Tuesday, February 2nd
+Persoonlijke data in de Tribe API gezet. HTML opgezet & vervolgens met hulp data opgehaald uit mijn [API](https://developers.giphy.com/docs/api/). Basic CSS styling toegevoegd.
 
 
 <!--In this course you will learn to build a web application without frameworks or unnecessary libraries, but with vanilla HTML, CSS & JavaScript as much as possible. The end result is a modular, single page web app (SPA). Data will be retrieved from an external API of your choice, manipulated and finally shown in the UI of the App. You will learn different ways to structure code and develop your own coding style. With the gained knowledge you will be able to build interactive prototypes, based on real data. Also you will gain a better understanding of how API's, frameworks and libraries work.-->
