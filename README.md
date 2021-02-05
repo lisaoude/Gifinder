@@ -14,7 +14,7 @@ Goal: Retrieve data from an API and render it in an overview page.
 Introductie op het vak gehad & mijn [visitekaartje](https://lisaoude.github.io/kickoff-2021/) gemaakt.
 
 ##### Tuesday, February 2nd
-Persoonlijke data in de API gezet. Vervolgens met veel hulp data opgehaald uit mijn [API](https://developers.giphy.com/docs/api/) 
+Persoonlijke data in de Tribe API gezet. Vervolgens met veel hulp data opgehaald uit mijn [API](https://developers.giphy.com/docs/api/) 
 
 
 <!--In this course you will learn to build a web application without frameworks or unnecessary libraries, but with vanilla HTML, CSS & JavaScript as much as possible. The end result is a modular, single page web app (SPA). Data will be retrieved from an external API of your choice, manipulated and finally shown in the UI of the App. You will learn different ways to structure code and develop your own coding style. With the gained knowledge you will be able to build interactive prototypes, based on real data. Also you will gain a better understanding of how API's, frameworks and libraries work.-->
