@@ -13,7 +13,7 @@ Always wanted to quickly search for a specific gif? ***Gifinder*** is here! By s
 - [] Link modules to each other
 - [] Update actor diagram
 - [] Make interaction diagram
-- [] Add clear states
+- [] Add c
 - [] Describe design patterns used
 
 
@@ -50,7 +50,7 @@ This weeks [Excercises](https://github.com/cmda-minor-web/web-app-from-scratch-2
 #### Monday, February 8th
 Had a bit of a rough day, it all felt like a lot to still do and didn't really know where to start. So decided to take it easy!
 - [x] Split some of my code up & got rid of 'waterfalls'
-- [x] *Tried* making the [first version of my Actor Diagram](/blob/master/images/v1_actordiagram.png)
+- [x] *Tried* making the [first version of my Actor Diagram](https://github.com/lisaoude/web-app-from-scratch-2021/blob/master/images/v1_actordiagram.png)
 
 #### Tuesday, February 9th
 - [x] Had a JavaScript Fundamentals meeting (see annotations below).
