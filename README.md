@@ -5,7 +5,7 @@ Always wanted to quickly search for a specific gif? ***Gifinder*** is here! By s
 
 [Used API](https://developers.giphy.com/docs/api/)
 
-
+<br/>
 
 # To Do
 - [x] Translate readme to English
@@ -16,7 +16,7 @@ Always wanted to quickly search for a specific gif? ***Gifinder*** is here! By s
 - [ ] Add c
 - [ ] Describe design patterns used
 
-
+<br/>
 
 # Weekly log
 
@@ -31,6 +31,8 @@ This weeks [Excercises](https://github.com/cmda-minor-web/web-app-from-scratch-2
 - [x] Put personal data into the Tribe API 
 - [x] Made my [business card](https://lisaoude.github.io/kickoff-2021/)
 
+<br/>
+
 #### Tuesday, February 2nd
 - [x] Wrote basic HTML form ym app
 - [x] Retrieved data from my chosen [API](https://developers.giphy.com/docs/api/)
@@ -38,6 +40,7 @@ This weeks [Excercises](https://github.com/cmda-minor-web/web-app-from-scratch-2
 - [x] Made it possible to let the user search for specific gifs
 
 
+<br/>
 
 
 ## Week 2 - Design and Refactor 🛠
@@ -52,11 +55,12 @@ Had a bit of a rough day, it all felt like a lot to still do and didn't really k
 - [x] Split some of my code up & got rid of 'waterfalls'
 - [x] *Tried* making the [first version of my Actor Diagram](https://github.com/lisaoude/web-app-from-scratch-2021/blob/master/images/v1_actordiagram.png)
 
+<br/>
+
 #### Tuesday, February 9th
 - [x] Had a JavaScript Fundamentals meeting (see annotations below).
 
-
-
+<br/>
 
 #### Annotations JavaScript Fundamentals 
 **Loading the script**
