@@ -8,18 +8,13 @@ Always wanted to quickly search for a specific gif? ***Gifinder*** is here! By s
 
 
 # To Do
-[] 
-[]
-[]
-[]
-[]
-linkToLiveDemo? review (assignment): assignGrade (1);
-What does your app do, what is the goal? (passing butter)
-Which actors are there in your application? (actor diagram)
-Which API is used and what are the limitations? (rate limit)
-How does flowed interaction through the application? (interaction diagram)
-Which design patterns and best practices
-What would you like to add (feature wishlist / backlog) -->
+- [x] Translate readme to English
+- [] Split code up in to modules
+- [] Link modules to each other
+- [] Update actor diagram
+- [] Make interaction diagram
+- [] Add clear states
+- [] Describe design patterns used
 
 
 
@@ -55,14 +50,16 @@ This weeks [Excercises](https://github.com/cmda-minor-web/web-app-from-scratch-2
 #### Monday, February 8th
 Had a bit of a rough day, it all felt like a lot to still do and didn't really know where to start. So decided to take it easy!
 - [x] Split some of my code up & got rid of 'waterfalls'
-- [x] Tried making the [first version of my Actor Diagram](images/v1_actordiagram)
+- [x] *Tried* making the [first version of my Actor Diagram](/blob/master/images/v1_actordiagram.png)
 
 #### Tuesday, February 9th
 - [x] Had a JavaScript Fundamentals meeting (see annotations below).
 
 
+
+
 #### Annotations JavaScript Fundamentals 
-##### Loading the script
+**Loading the script**
 - At the bottom of the HTML
 - Or: at the top, in the head with:
     - ```<script defer src="js/main.js"></script>```
@@ -73,17 +70,15 @@ Had a bit of a rough day, it all felt like a lot to still do and didn't really k
         - Main script **needs** to have type module to work
 
 
-
-##### Modules
+**Modules**
 - Modules are scoped
 - Modules only work on a web server or local host
 - Modules are deferred by default
 - Main script **needs** to have type module to work
 
 
-
-##### Scope
-**Local scope**
+**Scope**
+***Local scope***
 *Block scope*
 - ```{ const heading = document.querySelector('h1') }```
 - A ```const``` within curly brackets can only be used within those brackets
@@ -92,26 +87,23 @@ Had a bit of a rough day, it all felt like a lot to still do and didn't really k
 - ```function getHeading { var heading = (..); }```
 - A variable within this function can only be used within this function
 
-**Global scope**
+***Global scope***
 - ```const``` 
 - A ```const``` outside of any functions can be used within the entire document
 
 
-
-##### Hoisting
+**Hoisting**
 Hoisting code up 'above' the functions
 
 
-
-##### Function declarations
+**Function declarations**
 - ```function one() { (..) }```
 
-##### Function expression
+**Function expression**
 - ```const func = function (one) { (..) }```
 
 
-
-##### General
+**General**
 - ```[array literal]```
 - ```{object literal}```
 
