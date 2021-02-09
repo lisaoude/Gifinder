@@ -32,15 +32,15 @@ This weeks [Excercises](https://github.com/cmda-minor-web/web-app-from-scratch-2
 
 ### How it went
 #### Monday, February 1st
-[x] Introduction to the course
-[x] Put personal data into the Tribe API 
-[x] Made my [business card](https://lisaoude.github.io/kickoff-2021/)
+- [x] Introduction to the course
+- [x] Put personal data into the Tribe API 
+- [x] Made my [business card](https://lisaoude.github.io/kickoff-2021/)
 
 #### Tuesday, February 2nd
-[x] Wrote basic HTML form ym app
-[x] Retrieved data from my chosen [API](https://developers.giphy.com/docs/api/)
-[x] Added basic CSS styling
-[x] Made it possible to let the user search for specific gifs
+- [x] Wrote basic HTML form ym app
+- [x] Retrieved data from my chosen [API](https://developers.giphy.com/docs/api/)
+- [x] Added basic CSS styling
+- [x] Made it possible to let the user search for specific gifs
 
 
 
@@ -54,11 +54,11 @@ This weeks [Excercises](https://github.com/cmda-minor-web/web-app-from-scratch-2
 ### How it went
 #### Monday, February 8th
 Had a bit of a rough day, it all felt like a lot to still do and didn't really know where to start. So decided to take it easy!
-[x] Split some of my code up & got rid of 'waterfalls'
-[x] Tried making the [first version of my Actor Diagram](images/v1_actordiagram)
+- [x] Split some of my code up & got rid of 'waterfalls'
+- [x] Tried making the [first version of my Actor Diagram](images/v1_actordiagram)
 
 #### Tuesday, February 9th
-[x] Had a JavaScript Fundamentals meeting (see annotations below).
+- [x] Had a JavaScript Fundamentals meeting (see annotations below).
 
 
 #### Annotations JavaScript Fundamentals 
@@ -66,11 +66,11 @@ Had a bit of a rough day, it all felt like a lot to still do and didn't really k
 - At the bottom of the HTML
 - Or: at the top, in the head with:
     - ```<script defer src="js/main.js"></script>```
-    - Makes the script wait to be carried out until after all HTML has been loaded
+        - Makes the script wait to be carried out until after all HTML has been loaded
 
     - ```<script type = 'module' src="js/main.js"></script>```
-    - With type module the script automatically defers
-    - Main script **needs** to have type module to work
+        - With type module the script automatically defers
+        - Main script **needs** to have type module to work
 
 
 
@@ -86,7 +86,7 @@ Had a bit of a rough day, it all felt like a lot to still do and didn't really k
 **Local scope**
 *Block scope*
 - ```{ const heading = document.querySelector('h1') }```
-- A ````const``` within curly brackets can only be used within those brackets
+- A ```const``` within curly brackets can only be used within those brackets
 
 *Function scope* or *Lexical scope*
 - ```function getHeading { var heading = (..); }```
@@ -94,7 +94,7 @@ Had a bit of a rough day, it all felt like a lot to still do and didn't really k
 
 **Global scope**
 - ```const``` 
-- A ````const``` outside of any functions can be used within the entire document
+- A ```const``` outside of any functions can be used within the entire document
 
 
 
@@ -112,13 +112,13 @@ Hoisting code up 'above' the functions
 
 
 ##### General
-```[array literal]```
-```{object literal}```
+- ```[array literal]```
+- ```{object literal}```
 
-Browser -> sources
-Shows which things 'live' inside a scope 
+- Browser -> sources
+    - Shows which things 'live' inside a scope 
 
-Call stack -> waitinglist 
+- Call stack -> waitinglist 
 
 
 <!--In this course you will learn to build a web application without frameworks or unnecessary libraries, but with vanilla HTML, CSS & JavaScript as much as possible. The end result is a modular, single page web app (SPA). Data will be retrieved from an external API of your choice, manipulated and finally shown in the UI of the App. You will learn different ways to structure code and develop your own coding style. With the gained knowledge you will be able to build interactive prototypes, based on real data. Also you will gain a better understanding of how API's, frameworks and libraries work.-->
