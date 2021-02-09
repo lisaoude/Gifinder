@@ -12,7 +12,6 @@ Met deze app kan de gebruiker gifjes zoeken door een woord naar keuze in te vull
 Goal: Retrieve data from an API and render it in an overview page.
 
 [Excercises](https://github.com/cmda-minor-web/web-app-from-scratch-2021/blob/master/course/week-1.md)
-
 [Slides](https://docs.google.com/presentation/d/1hXfgIhBzJ2QXDmpKpMcx7G-a9R_fVrcPdeOyM3G0I00/edit?usp=sharing)
 
 ### How it went
@@ -22,6 +21,45 @@ Introductie op het vak gehad & mijn [visitekaartje](https://lisaoude.github.io/k
 #### Tuesday, February 2nd
 Persoonlijke data in de Tribe API gezet. HTML opgezet & vervolgens met hulp data opgehaald uit mijn [API](https://developers.giphy.com/docs/api/). Basic CSS styling toegevoegd.
 
+
+
+
+
+
+## Week 2 - Design and Refactor 🛠
+Goal: Design the web app. Add routes and states. Split code into modules. Rendering detail page.
+
+[Excercises](https://github.com/cmda-minor-web/web-app-from-scratch-2021/blob/master/course/week-2.md)
+[Slides](https://docs.google.com/presentation/d/1ycANqFk9LtrZCBJF2TyQ1c_bejjEctSlb-52xbK_P1g/edit?usp=sharing)
+
+
+### How it went
+#### Monday, February 8th
+xxx
+
+#### Tuesday, February 9th
+xxx
+
+#### Annotations JavaScript Fundamentals 
+##### Loading the script
+- At the bottom of the HTML
+- Or: at the top, in the head with:
+    - ```<script defer src="js/main.js"></script>```
+    - Makes the script wait to be carried out until after all HTML has been loaded
+    - ```<script type = 'module' src="js/main.js"></script>```
+    - With type module the script automatically defers
+
+
+
+
+<!-- # To Do
+linkToLiveDemo? review (assignment): assignGrade (1);
+What does your app do, what is the goal? (passing butter)
+Which actors are there in your application? (actor diagram)
+Which API is used and what are the limitations? (rate limit)
+How does flowed interaction through the application? (interaction diagram)
+Which design patterns and best practices
+What would you like to add (feature wishlist / backlog) -->
 
 <!--In this course you will learn to build a web application without frameworks or unnecessary libraries, but with vanilla HTML, CSS & JavaScript as much as possible. The end result is a modular, single page web app (SPA). Data will be retrieved from an external API of your choice, manipulated and finally shown in the UI of the App. You will learn different ways to structure code and develop your own coding style. With the gained knowledge you will be able to build interactive prototypes, based on real data. Also you will gain a better understanding of how API's, frameworks and libraries work.-->
 
@@ -43,15 +81,6 @@ Persoonlijke data in de Tribe API gezet. HTML opgezet & vervolgens met hulp data
 
 
 
-
-
-<!--### Week 2 - Design and Refactor 🛠-->
-
-<!--Goal: Design the web app. Add routes and states. Split code into modules. Rendering detail page.-->
-
-<!--[Excercises](https://github.com/cmda-minor-web/web-app-from-scratch-2021/blob/master/course/week-2.md)-->
-
-<!--[Slides](https://docs.google.com/presentation/d/1ycANqFk9LtrZCBJF2TyQ1c_bejjEctSlb-52xbK_P1g/edit?usp=sharing)-->
 
 
 
