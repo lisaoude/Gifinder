@@ -69,6 +69,7 @@ Had a bit of a rough day, it all felt like a lot to still do and didn't really k
         - With type module the script automatically defers
         - Main script **needs** to have type module to work
 
+<br/>
 
 **Modules**
 - Modules are scoped
@@ -76,6 +77,7 @@ Had a bit of a rough day, it all felt like a lot to still do and didn't really k
 - Modules are deferred by default
 - Main script **needs** to have type module to work
 
+<br/>
 
 **Scope**
 - ***Local scope***
@@ -91,10 +93,12 @@ Had a bit of a rough day, it all felt like a lot to still do and didn't really k
         - ```const``` 
         - A ```const``` outside of any functions can be used within the entire document
 
+<br/>
 
 **Hoisting**
 - Hoisting code up 'above' the functions
 
+<br/>
 
 **Function declarations**
 - ```function one() { (..) }```
@@ -102,6 +106,7 @@ Had a bit of a rough day, it all felt like a lot to still do and didn't really k
 **Function expression**
 - ```const func = function (one) { (..) }```
 
+<br/>
 
 **General**
 - ```[array literal]```
