@@ -1,58 +1,18 @@
 # Web App From Scratch @cmda-minor-web 2020 - 2021
 
-# App beschrijving
-Met deze app kan de gebruiker gifjes zoeken door een woord naar keuze in te vullen in het zoekveld. Vervolgens worden er 20 gifjes die voldoen aan dit trefwoord getoond aan de gebruiker.
+# App description
+Always wanted to quickly search for a specific gif? ***Gifinder*** is here! By simply typing a word of choice, you will get 20 gifs that meet your requirements!
 
-[Gebruikte API](https://developers.giphy.com/docs/api/)
-
-
-# Logboek
-## Week 1 - Hello API 🐒
-
-Goal: Retrieve data from an API and render it in an overview page.
-
-[Excercises](https://github.com/cmda-minor-web/web-app-from-scratch-2021/blob/master/course/week-1.md)
-[Slides](https://docs.google.com/presentation/d/1hXfgIhBzJ2QXDmpKpMcx7G-a9R_fVrcPdeOyM3G0I00/edit?usp=sharing)
-
-### How it went
-#### Monday, February 1st
-Introductie op het vak gehad & mijn [visitekaartje](https://lisaoude.github.io/kickoff-2021/) gemaakt.
-
-#### Tuesday, February 2nd
-Persoonlijke data in de Tribe API gezet. HTML opgezet & vervolgens met hulp data opgehaald uit mijn [API](https://developers.giphy.com/docs/api/). Basic CSS styling toegevoegd.
+[Used API](https://developers.giphy.com/docs/api/)
 
 
 
-
-
-
-## Week 2 - Design and Refactor 🛠
-Goal: Design the web app. Add routes and states. Split code into modules. Rendering detail page.
-
-[Excercises](https://github.com/cmda-minor-web/web-app-from-scratch-2021/blob/master/course/week-2.md)
-[Slides](https://docs.google.com/presentation/d/1ycANqFk9LtrZCBJF2TyQ1c_bejjEctSlb-52xbK_P1g/edit?usp=sharing)
-
-
-### How it went
-#### Monday, February 8th
-xxx
-
-#### Tuesday, February 9th
-xxx
-
-#### Annotations JavaScript Fundamentals 
-##### Loading the script
-- At the bottom of the HTML
-- Or: at the top, in the head with:
-    - ```<script defer src="js/main.js"></script>```
-    - Makes the script wait to be carried out until after all HTML has been loaded
-    - ```<script type = 'module' src="js/main.js"></script>```
-    - With type module the script automatically defers
-
-
-
-
-<!-- # To Do
+# To Do
+[] 
+[]
+[]
+[]
+[]
 linkToLiveDemo? review (assignment): assignGrade (1);
 What does your app do, what is the goal? (passing butter)
 Which actors are there in your application? (actor diagram)
@@ -60,6 +20,106 @@ Which API is used and what are the limitations? (rate limit)
 How does flowed interaction through the application? (interaction diagram)
 Which design patterns and best practices
 What would you like to add (feature wishlist / backlog) -->
+
+
+
+# Weekly log
+
+## Week 1 - Hello API 🐒
+*Goal: Retrieve data from an API and render it in an overview page.*
+
+This weeks [Excercises](https://github.com/cmda-minor-web/web-app-from-scratch-2021/blob/master/course/week-1.md) & [Slides](https://docs.google.com/presentation/d/1hXfgIhBzJ2QXDmpKpMcx7G-a9R_fVrcPdeOyM3G0I00/edit?usp=sharing)
+
+### How it went
+#### Monday, February 1st
+[x] Introduction to the course
+[x] Put personal data into the Tribe API 
+[x] Made my [business card](https://lisaoude.github.io/kickoff-2021/)
+
+#### Tuesday, February 2nd
+[x] Wrote basic HTML form ym app
+[x] Retrieved data from my chosen [API](https://developers.giphy.com/docs/api/)
+[x] Added basic CSS styling
+[x] Made it possible to let the user search for specific gifs
+
+
+
+
+## Week 2 - Design and Refactor 🛠
+*Goal: Design the web app. Add routes and states. Split code into modules. Rendering detail page.*
+
+This weeks [Excercises](https://github.com/cmda-minor-web/web-app-from-scratch-2021/blob/master/course/week-2.md) & [Slides](https://docs.google.com/presentation/d/1ycANqFk9LtrZCBJF2TyQ1c_bejjEctSlb-52xbK_P1g/edit?usp=sharing)
+
+
+### How it went
+#### Monday, February 8th
+Had a bit of a rough day, it all felt like a lot to still do and didn't really know where to start. So decided to take it easy!
+[x] Split some of my code up & got rid of 'waterfalls'
+[x] Tried making the [first version of my Actor Diagram](images/v1_actordiagram)
+
+#### Tuesday, February 9th
+[x] Had a JavaScript Fundamentals meeting (see annotations below).
+
+
+#### Annotations JavaScript Fundamentals 
+##### Loading the script
+- At the bottom of the HTML
+- Or: at the top, in the head with:
+    - ```<script defer src="js/main.js"></script>```
+    - Makes the script wait to be carried out until after all HTML has been loaded
+
+    - ```<script type = 'module' src="js/main.js"></script>```
+    - With type module the script automatically defers
+    - Main script **needs** to have type module to work
+
+
+
+##### Modules
+- Modules are scoped
+- Modules only work on a web server or local host
+- Modules are deferred by default
+- Main script **needs** to have type module to work
+
+
+
+##### Scope
+**Local scope**
+*Block scope*
+- ```{ const heading = document.querySelector('h1') }```
+- A ````const``` within curly brackets can only be used within those brackets
+
+*Function scope* or *Lexical scope*
+- ```function getHeading { var heading = (..); }```
+- A variable within this function can only be used within this function
+
+**Global scope**
+- ```const``` 
+- A ````const``` outside of any functions can be used within the entire document
+
+
+
+##### Hoisting
+Hoisting code up 'above' the functions
+
+
+
+##### Function declarations
+- ```function one() { (..) }```
+
+##### Function expression
+- ```const func = function (one) { (..) }```
+
+
+
+##### General
+```[array literal]```
+```{object literal}```
+
+Browser -> sources
+Shows which things 'live' inside a scope 
+
+Call stack -> waitinglist 
+
 
 <!--In this course you will learn to build a web application without frameworks or unnecessary libraries, but with vanilla HTML, CSS & JavaScript as much as possible. The end result is a modular, single page web app (SPA). Data will be retrieved from an external API of your choice, manipulated and finally shown in the UI of the App. You will learn different ways to structure code and develop your own coding style. With the gained knowledge you will be able to build interactive prototypes, based on real data. Also you will gain a better understanding of how API's, frameworks and libraries work.-->
 
