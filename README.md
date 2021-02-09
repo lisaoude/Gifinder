@@ -9,12 +9,12 @@ Always wanted to quickly search for a specific gif? ***Gifinder*** is here! By s
 
 # To Do
 - [x] Translate readme to English
-- [] Split code up in to modules
-- [] Link modules to each other
-- [] Update actor diagram
-- [] Make interaction diagram
-- [] Add c
-- [] Describe design patterns used
+- [ ] Split code up in to modules
+- [ ] Link modules to each other
+- [ ] Update actor diagram
+- [ ] Make interaction diagram
+- [ ] Add c
+- [ ] Describe design patterns used
 
 
 
