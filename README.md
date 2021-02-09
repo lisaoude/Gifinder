@@ -78,22 +78,22 @@ Had a bit of a rough day, it all felt like a lot to still do and didn't really k
 
 
 **Scope**
-***Local scope***
-*Block scope*
-- ```{ const heading = document.querySelector('h1') }```
-- A ```const``` within curly brackets can only be used within those brackets
+- ***Local scope***
+    - *Block scope*
+        - ```{ const heading = document.querySelector('h1') }```
+        - A ```const``` within curly brackets can only be used within those brackets
 
-*Function scope* or *Lexical scope*
-- ```function getHeading { var heading = (..); }```
-- A variable within this function can only be used within this function
+    - *Function scope* or *Lexical scope*
+        - ```function getHeading { var heading = (..); }```
+        - A variable within this function can only be used within this function
 
-***Global scope***
-- ```const``` 
-- A ```const``` outside of any functions can be used within the entire document
+- ***Global scope***
+        - ```const``` 
+        - A ```const``` outside of any functions can be used within the entire document
 
 
 **Hoisting**
-Hoisting code up 'above' the functions
+- Hoisting code up 'above' the functions
 
 
 **Function declarations**
