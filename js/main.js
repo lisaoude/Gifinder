@@ -2,6 +2,8 @@
 const gifContainer = document.querySelector('.gif-container')
 const input = document.querySelector('.gif-type')
 const form = document.querySelector('.gif-form')
+const button = document.querySelector('.button')
+
 
 // when 'form' is submitted, fetch the gifs
 form.addEventListener('submit', (event) => {
@@ -10,7 +12,17 @@ form.addEventListener('submit', (event) => {
 
     fetchGifs(input.value)
         .then(data => showGifs(data.data))
+
+// when button is clicked, remove placeholder
+button.addEventListener('click', removePlaceholder);
+
+function removePlaceholder() {
+    let placeholder = document.querySelector('.placeholder');
+
+    placeholder.classList.add('remove');
+}
 })
+
 
 // declare where the data (gifs) should be fetched from
 const fetchGifs = (inputValue) => {
@@ -24,6 +36,7 @@ const fetchGifs = (inputValue) => {
         .then(response => response.json())
         .catch(err => console.log(`Error ${err}`))
 }
+
 
 const showGifs = (data) => {
 

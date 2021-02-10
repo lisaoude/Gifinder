@@ -73,12 +73,52 @@ input {
 }
 
 button {
-    width: 12em;
+    width: 14em;
     height: 3em;
     padding: 10px;
     border: solid 0.5px #000000;
     border-radius: 5px;
-    background-color: hotpink;
+    background-color: orange;
+}
+
+.button-detail {
+    position: absolute;
+    top: 9.5em;
+    left: 78%;
+    width: 17em;
+    height: 3em;
+    padding: 10px;
+    color: #ffffff;
+    font-size: 14px;
+    border-radius: 5px;
+    background-color: #000000;
+    transform: rotate(90deg);
+}
+
+.placeholder {
+    display: grid;
+    grid-column-gap: 2em;
+    grid-row-gap: 2em;
+
+    display: flex;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    justify-content: space-between;
+    min-width: 25%;
+    max-width: 100%;
+}
+
+section div {
+    width: 15em;
+    height: 15em;
+    background-color: lightgray;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.remove {
+    display: none;
 }
 
 section:nth-of-type(2) {
@@ -96,8 +136,8 @@ section:nth-of-type(2) {
 
 .containerForGif {
     width: 15em;
-    height: auto;
-    background-color: aqua;
+    height: 15em;
+    background-color: orange;
     object-fit: contain;
 
     display: flex;
