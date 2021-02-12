@@ -1,54 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title>Gifinder</title>
+        <title>Gifinder</title>
 
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
-    <link href="style/styles.css" rel="stylesheet" />
-</head>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
+        <link href="style/styles.css" rel="stylesheet" />
+    </head>
 
-<body>
-    <main>
+    <body>
+        <main>
 
-        <div>
-            <h1>Get a Gif!</h1>
-            <h2>What kind of gifs would you like?</h2>
-            
-            <a href="./detail.html">
-                <button class='button-detail' type="submit" value='go'>Or do you want text gifs?</button>
-            </a>
-        </div>
+            <div>
+                <h1>Get a Gif!</h1>
+                <h2>What kind of gifs would you like?</h2>
+            </div>
 
-        <section>
-            <form class="gif-form" action="">
+            <section>
+                <input type="text" id='input' name='giftype' required placeholder='Tell me!'>
+                <button id='button' type="submit" value='go'>Show me the gifs!</button>
+            </section>
 
-                <label>
-                    <input type="text" class='gif-type' name='giftype' required placeholder='Tell me!'>
-                </label>
+        </main>
 
-                <button class='button' type="submit" value='go'>Show me the gifs!</button>
-
-            </form>
-
-        </section>
-
-        <section class="gif-container">
-            <!-- <img src="https://media.giphy.com/media/JVGLHEuzbVviW/giphy.gif" alt="funny gif"> -->
-            <!-- <section class="placeholder">
-                <div></div>
-                <div></div>
-                <div></div>
-            </section> -->
-        </section>
-
-    </main>
-
-    <script type='module' src="js/main.js" text="javascript"></script>
-</body>
-
+        <script type='module' src="js/main.js" text="javascript"></script>
+    </body>
 </html>
+
+
+
+
+
