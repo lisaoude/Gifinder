@@ -59,6 +59,8 @@ Had a bit of a rough day, it all felt like a lot to still do and didn't really k
 
 #### Tuesday, February 9th
 - [x] Had a JavaScript Fundamentals meeting (see annotations below).
+**NOTE: this done-list needs to be updated. This will be done this friday.**
+**NOTE 2: I haven't made my 'second' version of my Actor Diagram, nor have i made the first version of my Interaction Diagram. I have been struggling with splitting my code in to modules. Please review just my code this time.**
 
 <br/>
 
