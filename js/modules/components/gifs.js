@@ -1,20 +1,42 @@
+// showing gifs in html
 export const createGifs = (element, props) => {
+
+  // for each props item (gif)
   props.forEach(item => {
-      const frame = document.createElement('iframe')
-      frame.src = `${item.embed_url}`
-      frame.title = `${item.title}`
-      element.appendChild(frame)
+
+      // create an iframe element
+      const actualGifs = document.createElement('iframe')
+
+      // identify the source
+      actualGifs.src = `${item.url}`
+
+      // give each their own original title
+      actualGifs.title = `${item.title}`
+
+      // append frame to element
+      element.appendChild(actualGifs)
+
+      console.log(actualGifs)
   })
   return element
 }
 
+// delete previously loaded gifs
 export const deleteGifs = () => {
+
+  // turn html element into variable 
   const container = document.querySelector('#gifContainer')
+
+  // if the container had any content (gifs)
    if (container.hasChildNodes()) {
-     const iframes = Array.from(container.childNodes)
-     iframes.forEach(item => {
+
+     // convert to array to be able to remove the items in this array
+     const previousGifs = Array.from(container.childNodes)
+
+     // delete each items in this array
+     previousGifs.forEach(item => {
        item.remove()
      })
-    console.log(iframes)
+    // console.log(iframes)
   }
 }

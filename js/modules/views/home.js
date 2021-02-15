@@ -1,15 +1,15 @@
 import { deleteGifs, createGifs } from '../components/gifs.js' 
 
+// this function deletes the previous gifs
+// and loads the new ones using the input value
 export const createHomePage = (props, section) => {
-  console.log(props)
-  console.log(section)
+  // console.log(props)
+  // console.log(section)
 
-
-  // Remove previous gifs before loading next
+  // remove previous gifs before loading next (gifs.js)
   let remove = deleteGifs()
 
-  // Append gifs to section
+  // append gifs to section (gifs.js)
   let gifs = createGifs(section, props)
   
 }
-

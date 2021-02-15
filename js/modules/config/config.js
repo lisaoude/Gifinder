@@ -1,3 +1,4 @@
+// export variables needed in other files
 export const url = 'https://api.giphy.com/v1/gifs/'
 export const searchType = 'search?q='
 export const trendingType = 'trending'
