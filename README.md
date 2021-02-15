@@ -9,16 +9,87 @@ Always wanted to quickly search for a specific gif? ***Gifinder*** is here! By s
 
 # To Do
 - [x] Translate readme to English
-- [ ] Split code up in to modules
-- [ ] Link modules to each other
+- [x] Add description to 'about' section of repo
+- [x] Split code up in to modules
+- [x] Link modules to each other
+- [x] Fix data showing in live demo (when you search a different word, the gifs show up underneath the previous result)
+- [x] Show popular gifs before searching as a homepage
+- [ ] Add some more comments in js files for clarity
+- [ ] Render gifs in images instead of iframes
+- [ ] Implement router 
 - [ ] Update actor diagram
 - [ ] Make interaction diagram
-- [ ] Add c
-- [ ] Describe design patterns used
+- [ ] Describe design patterns used?
+
+
+
+<!--
+- [ ] Look into naming of 'const init'
+- [ ] Change let to const where possible (main 11)
+- [ ] Remove gifs 14 (not needed)
+- [ ] Put a function around variables in config.js to export them at once
+-->
 
 <br/>
 
 # Weekly log
+## Week 3 - Wrapping up 🎁
+*Goal: Manipulate data. Reflect on end result.*
+
+This weeks [Excercises](https://github.com/cmda-minor-web/web-app-from-scratch-2021/blob/master/course/week-3.md) & [Slides](https://docs.google.com/presentation/d/1yZi-ODpENKHMr0-kpKmnCI6dGSgXS9oeLxMXCJnieic/edit?usp=sharing)
+
+
+### How it went
+#### Monday, February 15th
+- [ ]
+- [ ]
+
+<br/>
+
+#### Tuesday, February 16th
+- [ ]
+- [ ]
+
+
+
+<br/>
+
+
+
+## Week 2 - Design and Refactor 🛠
+*Goal: Design the web app. Add routes and states. Split code into modules. Rendering detail page.*
+
+This weeks [Excercises](https://github.com/cmda-minor-web/web-app-from-scratch-2021/blob/master/course/week-2.md) & [Slides](https://docs.google.com/presentation/d/1ycANqFk9LtrZCBJF2TyQ1c_bejjEctSlb-52xbK_P1g/edit?usp=sharing)
+
+
+### How it went
+#### Monday, February 8th
+Had a bit of a rough day, it all felt like a lot to still do and didn't really know where to start. So decided to take it easy!
+- [x] Split some of my code up & got rid of 'waterfalls'
+- [x] *Tried* making the [first version of my Actor Diagram](https://github.com/lisaoude/web-app-from-scratch-2021/blob/master/images/v1_actordiagram.png)
+
+<br/>
+
+#### Tuesday, February 9th
+- [x] Had a JavaScript Fundamentals meeting (see annotations at bottom of readme).
+- [x] Tried splitting code up, but broke it :smiley :+1 :heavy_check_mark
+
+<br/>
+
+#### Thursday, February 11th
+- [x] Had another try at fixing my code. I was able to load in some gifs, but didn't get it to work again with input from my users. 
+- [x] Was able to show trending gifs on load :fire
+
+<br/>
+
+#### Friday, February 12th
+- [x] :fire **Finally** :fire fixed my code so it works in modules, shows trending gifs on load *and* shows gifs based on the input of my users.
+
+
+
+<br/>
+
+
 
 ## Week 1 - Hello API 🐒
 *Goal: Retrieve data from an API and render it in an overview page.*
@@ -40,35 +111,10 @@ This weeks [Excercises](https://github.com/cmda-minor-web/web-app-from-scratch-2
 - [x] Made it possible to let the user search for specific gifs
 
 
-<br/>
-
-
-## Week 2 - Design and Refactor 🛠
-*Goal: Design the web app. Add routes and states. Split code into modules. Rendering detail page.*
-
-This weeks [Excercises](https://github.com/cmda-minor-web/web-app-from-scratch-2021/blob/master/course/week-2.md) & [Slides](https://docs.google.com/presentation/d/1ycANqFk9LtrZCBJF2TyQ1c_bejjEctSlb-52xbK_P1g/edit?usp=sharing)
-
-
-### How it went
-#### Monday, February 8th
-Had a bit of a rough day, it all felt like a lot to still do and didn't really know where to start. So decided to take it easy!
-- [x] Split some of my code up & got rid of 'waterfalls'
-- [x] *Tried* making the [first version of my Actor Diagram](https://github.com/lisaoude/web-app-from-scratch-2021/blob/master/images/v1_actordiagram.png)
 
 <br/>
 
-#### Tuesday, February 9th
-- [x] Had a JavaScript Fundamentals meeting (see annotations below).
 
-<br/>
-
-**NOTE: this done-list needs to be updated. This will be done this friday.**
-
-<br/>
-
-**NOTE 2: I haven't made my 'second' version of my Actor Diagram, nor have i made the first version of my Interaction Diagram. I have been struggling with splitting my code in to modules. Please review just my code this time.**
-
-<br/>
 
 #### Annotations JavaScript Fundamentals 
 **Loading the script**
@@ -151,18 +197,6 @@ Had a bit of a rough day, it all felt like a lot to still do and didn't really k
 
 
 
-
-
-<!--### Week 3 - Wrapping up 🎁-->
-
-<!--
-Goal:
-Manipulate data. Reflect on end result
--->
-
-<!--[Excercises](https://github.com/cmda-minor-web/web-app-from-scratch-2021/blob/master/course/week-3.md)-->
-
-<!--[Slides](https://docs.google.com/presentation/d/1yZi-ODpENKHMr0-kpKmnCI6dGSgXS9oeLxMXCJnieic/edit?usp=sharing)-->
 
 <!--
 ## Best Practices
