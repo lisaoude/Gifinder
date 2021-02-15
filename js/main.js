@@ -12,7 +12,7 @@ const start = async () => {
     const main = document.querySelector('main')
 
     // create section element
-    let section = document.createElement('section')
+    const section = document.createElement('section')
 
     // set id to that section
     section.setAttribute('id', 'gifContainer')

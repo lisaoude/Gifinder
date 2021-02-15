@@ -1,6 +1,7 @@
 // export variables needed in other files
-export const url = 'https://api.giphy.com/v1/gifs/'
-export const searchType = 'search?q='
-export const trendingType = 'trending'
-export const key = 'JzbS3qH49ykiVKnHZx0z5M0gjNPVMbh3'
-export const limit = 5
+export const
+    url = 'https://api.giphy.com/v1/gifs/',
+    searchType = 'search?q=',
+    trendingType = 'trending',
+    key = 'JzbS3qH49ykiVKnHZx0z5M0gjNPVMbh3',
+    limit = 5
