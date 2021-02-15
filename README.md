@@ -116,7 +116,7 @@ This weeks [Excercises](https://github.com/cmda-minor-web/web-app-from-scratch-2
 
 
 
-#### Annotations JavaScript Fundamentals 
+## Annotations JavaScript Fundamentals 
 **Loading the script**
 - At the bottom of the HTML
 - Or: at the top, in the head with:
