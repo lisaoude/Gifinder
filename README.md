@@ -72,18 +72,18 @@ Had a bit of a rough day, it all felt like a lot to still do and didn't really k
 
 #### Tuesday, February 9th
 - [x] Had a JavaScript Fundamentals meeting (see annotations at bottom of readme).
-- [x] Tried splitting code up, but broke it :smiley :+1 :heavy_check_mark
+- [x] Tried splitting code up, but broke it 😃👍✔️
 
 <br/>
 
 #### Thursday, February 11th
 - [x] Had another try at fixing my code. I was able to load in some gifs, but didn't get it to work again with input from my users. 
-- [x] Was able to show trending gifs on load :fire
+- [x] Was able to show trending gifs on load 🔥
 
 <br/>
 
 #### Friday, February 12th
-- [x] :fire **Finally** :fire fixed my code so it works in modules, shows trending gifs on load *and* shows gifs based on the input of my users.
+- [x] 🔥**Finally**🔥 fixed my code so it works in modules, shows trending gifs on load *and* shows gifs based on the input of my users.
 
 
 
