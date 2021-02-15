@@ -5,10 +5,10 @@ export const createGifs = (element, props) => {
   props.forEach(item => {
 
       // create an iframe element
-      const actualGifs = document.createElement('iframe')
+      const actualGifs = document.createElement('img')
 
       // identify the source
-      actualGifs.src = `${item.url}`
+      actualGifs.src = `https://media.giphy.com/media/${item.id}/giphy.gif`
 
       // give each their own original title
       actualGifs.title = `${item.title}`
