@@ -7,7 +7,8 @@ const start = async () => {
 
     // turn html elements into variables
     const input = document.querySelector('#input')
-    const button = document.querySelector('#button')
+    // const button = document.querySelector('#button')
+    const form = document.querySelector('form')
     const main = document.querySelector('main')
 
     // create section element
@@ -28,7 +29,8 @@ const start = async () => {
 
     // IF the button gets clicked, data will be fetched again
     // but this time using the input value
-    button.addEventListener('click', async function () {
+    form.addEventListener('submit', async function (event) {
+        event.preventDefault()
          data = await receiveData(input.value)
           createHomePage(data.data, section)
      })  
