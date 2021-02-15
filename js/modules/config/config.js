@@ -4,4 +4,4 @@ export const
     searchType = 'search?q=',
     trendingType = 'trending',
     key = 'JzbS3qH49ykiVKnHZx0z5M0gjNPVMbh3',
-    limit = 5
+    limit = 20

@@ -9,13 +9,17 @@
 
 html {
     font-family: 'helvetica neue', helvetica, arial, sans-serif;
-}
+    --default-width: 15em;
+    --default-height: 15em;
+    }
 
 main {
     width: 85%;
     margin: 0 auto;
     margin-top: 3em;
 }
+
+
 
 
 /*****************************************/
@@ -88,6 +92,30 @@ button {
     border-radius: 5px;
     background-color: orange;
 }
+
+#gifContainer {
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-rows: var(--default-height);
+    grid-gap: 1em;
+    margin-bottom: 3em;
+}
+
+#gifContainer img {
+    max-width: var(--default-width);
+    max-height: var(--default-height);
+    /* object-fit: contain;
+    overflow: hidden; */
+}
+
+
+
+
+
+
+
 /* 
 section div {
     width: 15em;
@@ -98,7 +126,7 @@ section div {
     align-content: center;
 } */
 
-#gifContainer {
+/* #gifContainer {
     display: grid;
     grid-column-gap: 2em;
     grid-row-gap: 2em;
@@ -109,7 +137,7 @@ section div {
     justify-content: space-between;
     min-width: 25%;
     max-width: 100%;
-}
+} */
 
 /* .containerForGif {
     width: 15em;
