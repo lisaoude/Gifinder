@@ -1,11 +1,33 @@
+// import { deleteGifs, createGifs } from '../components/gifs.js' 
+
+// this function deletes the previous gifs
+// and loads the new ones using the input value
+export const reloadHomePage = (props, section) => {
+  // console.log(props)
+  // console.log(section)
+
+  // remove previous gifs before loading next (gifs.js)
+  let remove = deleteGifs()
+
+  // append gifs to section (gifs.js)
+  let gifs = createGifs(section, props)
+  
+}
+
+
 // showing gifs in html
-export const createGifs = (element, props) => {
+ const createGifs = (element, props) => {
 
   // for each props item (gif)
   props.forEach(item => {
 
-      // create an iframe element
+      // create a element
+      const clickable = document.createElement('a')
+
+      // create an img element
       const actualGifs = document.createElement('img')
+
+      clickable.href = `#gif/${item.id}`;
 
       // identify the source
       actualGifs.src = `https://media.giphy.com/media/${item.id}/giphy.gif`
@@ -13,16 +35,17 @@ export const createGifs = (element, props) => {
       // give each their own original title
       actualGifs.title = `${item.title}`
 
-      // append frame to element
-      element.appendChild(actualGifs)
+      
+      clickable.appendChild(actualGifs)
+      element.appendChild(clickable)
 
-      console.log(actualGifs)
+      // console.log(actualGifs)
   })
   return element
 }
 
 // delete previously loaded gifs
-export const deleteGifs = () => {
+ const deleteGifs = () => {
 
   // turn html element into variable 
   const container = document.querySelector('#gifContainer')

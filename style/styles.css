@@ -91,6 +91,8 @@ button {
     border: solid 0.5px #000000;
     border-radius: 5px;
     background-color: orange;
+    font-size: 1em;
+    font-weight: 400;
 }
 
 #gifContainer {
@@ -111,7 +113,9 @@ button {
 }
 
 
-
+.hidden {
+    display: none;
+}
 
 
 

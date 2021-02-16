@@ -8,6 +8,7 @@ export const receiveData = async (query) => {
       // console.log('leeg')
       // fetch trending gifs
       const response = await fetch(`${url}${trendingType}?&api_key=${key}&limit=${limit}`)
+      console.log(`${url}${trendingType}?&api_key=${key}&limit=${limit}`)
       const data = await response.json()
       return data  
   } else {
