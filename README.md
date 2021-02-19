@@ -1,135 +1,141 @@
 # Web App From Scratch @cmda-minor-web 2020 - 2021
 
 # App description
-Always wanted to quickly search for a specific gif? ***Gifinder*** is here! By simply typing a word of choice, you will get 20 gifs that meet your requirements!
+
+Always wanted to quickly search for a specific gif? **_Gifinder_** is here! By simply typing a word of choice, you will get 20 gifs that meet your requirements!
 
 [Used API](https://developers.giphy.com/docs/api/)
 
 <br/>
 
 # To Do
+
 - [x] Translate readme to English
 - [x] Add description to 'about' section of repo
 - [x] Split code up in to modules
 - [x] Link modules to each other
 - [x] Fix data showing in live demo (when you search a different word, the gifs show up underneath the previous result)
 - [x] Show popular gifs before searching as a homepage
-- [ ] Add some more comments in js files for clarity
-- [ ] Render gifs in images instead of iframes
-- [ ] Implement router 
+- [x] Add some more comments in js files for clarity
+- [x] Render gifs in images instead of iframes
+- [x] Implement router
+- [x] Make detail page
+- [ ] Expand content shown on detail page
+- [ ] Add loading state
+- [ ] Add error state
 - [ ] Update actor diagram
 - [ ] Make interaction diagram
 - [ ] Describe design patterns used?
 
-
-
-<!--
-- [ ] Look into naming of 'const init'
-- [ ] Change let to const where possible (main 11)
-- [ ] Remove gifs 14 (not needed)
-- [ ] Put a function around variables in config.js to export them at once
--->
-
 <br/>
 
 # Weekly log
+
 ## Week 3 - Wrapping up 🎁
-*Goal: Manipulate data. Reflect on end result.*
+
+_Goal: Manipulate data. Reflect on end result._
 
 This weeks [Excercises](https://github.com/cmda-minor-web/web-app-from-scratch-2021/blob/master/course/week-3.md) & [Slides](https://docs.google.com/presentation/d/1yZi-ODpENKHMr0-kpKmnCI6dGSgXS9oeLxMXCJnieic/edit?usp=sharing)
 
-
 ### How it went
+
 #### Monday, February 15th
-- [ ]
-- [ ]
+
+- [x] Added extra comments to my code for clarity
+- [x] Now rendering gifs in images again instead of iframes
+- [x] Emptied my HTML, now all rendered with JavaScript ✔️
 
 <br/>
 
 #### Tuesday, February 16th
-- [ ]
-- [ ]
 
-
+- [x] Made a detail page
+- [x] Got routie to work! 🔥
+- [x] Added a little content to my detail page
 
 <br/>
 
-
-
 ## Week 2 - Design and Refactor 🛠
-*Goal: Design the web app. Add routes and states. Split code into modules. Rendering detail page.*
+
+_Goal: Design the web app. Add routes and states. Split code into modules. Rendering detail page._
 
 This weeks [Excercises](https://github.com/cmda-minor-web/web-app-from-scratch-2021/blob/master/course/week-2.md) & [Slides](https://docs.google.com/presentation/d/1ycANqFk9LtrZCBJF2TyQ1c_bejjEctSlb-52xbK_P1g/edit?usp=sharing)
 
-
 ### How it went
+
 #### Monday, February 8th
+
 Had a bit of a rough day, it all felt like a lot to still do and didn't really know where to start. So decided to take it easy!
+
 - [x] Split some of my code up & got rid of 'waterfalls'
-- [x] *Tried* making the [first version of my Actor Diagram](https://github.com/lisaoude/web-app-from-scratch-2021/blob/master/images/v1_actordiagram.png)
+- [x] _Tried_ making the [first version of my Actor Diagram](https://github.com/lisaoude/web-app-from-scratch-2021/blob/master/images/v1_actordiagram.png)
 
 <br/>
 
 #### Tuesday, February 9th
+
 - [x] Had a JavaScript Fundamentals meeting (see annotations at bottom of readme).
 - [x] Tried splitting code up, but broke it 😃👍✔️
 
 <br/>
 
 #### Thursday, February 11th
-- [x] Had another try at fixing my code. I was able to load in some gifs, but didn't get it to work again with input from my users. 
+
+- [x] Had another try at fixing my code. I was able to load in some gifs, but didn't get it to work again with input from my users.
 - [x] Was able to show trending gifs on load 🔥
 
 <br/>
 
 #### Friday, February 12th
-- [x] 🔥**Finally**🔥 fixed my code so it works in modules, shows trending gifs on load *and* shows gifs based on the input of my users.
 
-
+- [x] 🔥**Finally**🔥 fixed my code so it works in modules, shows trending gifs on load _and_ shows gifs based on the input of my users.
 
 <br/>
 
-
-
 ## Week 1 - Hello API 🐒
-*Goal: Retrieve data from an API and render it in an overview page.*
+
+_Goal: Retrieve data from an API and render it in an overview page._
 
 This weeks [Excercises](https://github.com/cmda-minor-web/web-app-from-scratch-2021/blob/master/course/week-1.md) & [Slides](https://docs.google.com/presentation/d/1hXfgIhBzJ2QXDmpKpMcx7G-a9R_fVrcPdeOyM3G0I00/edit?usp=sharing)
 
 ### How it went
+
 #### Monday, February 1st
+
 - [x] Introduction to the course
-- [x] Put personal data into the Tribe API 
+- [x] Put personal data into the Tribe API
 - [x] Made my [business card](https://lisaoude.github.io/kickoff-2021/)
 
 <br/>
 
 #### Tuesday, February 2nd
+
 - [x] Wrote basic HTML form ym app
 - [x] Retrieved data from my chosen [API](https://developers.giphy.com/docs/api/)
 - [x] Added basic CSS styling
 - [x] Made it possible to let the user search for specific gifs
 
-
-
 <br/>
 
+## Annotations JavaScript Fundamentals
 
-
-## Annotations JavaScript Fundamentals 
 **Loading the script**
+
 - At the bottom of the HTML
 - Or: at the top, in the head with:
-    - ```<script defer src="js/main.js"></script>```
-        - Makes the script wait to be carried out until after all HTML has been loaded
 
-    - ```<script type = 'module' src="js/main.js"></script>```
-        - With type module the script automatically defers
-        - Main script **needs** to have type module to work
+  - `<script defer src="js/main.js"></script>`
+
+    - Makes the script wait to be carried out until after all HTML has been loaded
+
+  - `<script type = 'module' src="js/main.js"></script>`
+    - With type module the script automatically defers
+    - Main script **needs** to have type module to work
 
 <br/>
 
 **Modules**
+
 - Modules are scoped
 - Modules only work on a web server or local host
 - Modules are deferred by default
@@ -138,43 +144,48 @@ This weeks [Excercises](https://github.com/cmda-minor-web/web-app-from-scratch-2
 <br/>
 
 **Scope**
-- ***Local scope***
-    - *Block scope*
-        - ```{ const heading = document.querySelector('h1') }```
-        - A ```const``` within curly brackets can only be used within those brackets
 
-    - *Function scope* or *Lexical scope*
-        - ```function getHeading { var heading = (..); }```
-        - A variable within this function can only be used within this function
+- **_Local scope_**
 
-- ***Global scope***
-        - ```const``` 
-        - A ```const``` outside of any functions can be used within the entire document
+  - _Block scope_
+
+    - `{ const heading = document.querySelector('h1') }`
+    - A `const` within curly brackets can only be used within those brackets
+
+  - _Function scope_ or _Lexical scope_
+    - `function getHeading { var heading = (..); }`
+    - A variable within this function can only be used within this function
+
+- **_Global scope_** - `const` - A `const` outside of any functions can be used within the entire document
 
 <br/>
 
 **Hoisting**
+
 - Hoisting code up 'above' the functions
 
 <br/>
 
 **Function declarations**
-- ```function one() { (..) }```
+
+- `function one() { (..) }`
 
 **Function expression**
-- ```const func = function (one) { (..) }```
+
+- `const func = function (one) { (..) }`
 
 <br/>
 
 **General**
-- ```[array literal]```
-- ```{object literal}```
+
+- `[array literal]`
+- `{object literal}`
 
 - Browser -> sources
-    - Shows which things 'live' inside a scope 
 
-- Call stack -> waitinglist 
+  - Shows which things 'live' inside a scope
 
+- Call stack -> waitinglist
 
 <!--In this course you will learn to build a web application without frameworks or unnecessary libraries, but with vanilla HTML, CSS & JavaScript as much as possible. The end result is a modular, single page web app (SPA). Data will be retrieved from an external API of your choice, manipulated and finally shown in the UI of the App. You will learn different ways to structure code and develop your own coding style. With the gained knowledge you will be able to build interactive prototypes, based on real data. Also you will gain a better understanding of how API's, frameworks and libraries work.-->
 
@@ -191,12 +202,6 @@ This weeks [Excercises](https://github.com/cmda-minor-web/web-app-from-scratch-2
 [Rubric](https://docs.google.com/spreadsheets/d/1vJJ4EhIqkefWj1nWFp0Pnvy1Kld-S2V3qwZgC6XQO0c/edit?usp=sharing), with learning goals
 [Overall planning](https://teams.microsoft.com/l/file/95EAEC95-4AB8-4E62-A810-2445969460B6?tenantId=0907bb1e-21fc-476f-8843-02d09ceb59a7&fileType=xlsx&objectUrl=https%3A%2F%2Ficthva.sharepoint.com%2Fsites%2FFDMCI_EDU__CMD20_21_Minor_Web_5i7j73jt%2FShared%20Documents%2F02%20-%20Web%20App%20From%20Scratch%2FWAFS%202021%20Planning.xlsx&baseUrl=https%3A%2F%2Ficthva.sharepoint.com%2Fsites%2FFDMCI_EDU__CMD20_21_Minor_Web_5i7j73jt&serviceName=teams&threadId=19:9bd8abc7b32c4e0196ddbaae12cf8e79@thread.tacv2&groupId=5d001f9a-0a4b-4768-92b1-0f1768328ba3)
 -->
-
-
-
-
-
-
 
 <!--
 ## Best Practices
