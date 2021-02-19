@@ -1,10 +1,6 @@
-// import { deleteGifs, createGifs } from '../components/gifs.js' 
-
 // this function deletes the previous gifs
 // and loads the new ones using the input value
 export const reloadHomePage = (props, section) => {
-  // console.log(props)
-  // console.log(section)
 
   // remove previous gifs before loading next (gifs.js)
   let remove = deleteGifs()
@@ -38,8 +34,6 @@ export const reloadHomePage = (props, section) => {
       
       clickable.appendChild(actualGifs)
       element.appendChild(clickable)
-
-      // console.log(actualGifs)
   })
   return element
 }
@@ -60,6 +54,5 @@ export const reloadHomePage = (props, section) => {
      previousGifs.forEach(item => {
        item.remove()
      })
-    // console.log(iframes)
   }
 }

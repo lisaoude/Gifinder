@@ -2,9 +2,13 @@ import { receiveData } from '../data/fetch.js'
 import { reloadHomePage } from '../components/gifs.js'
 import { body, sectionForGifs } from '../config/config.js'
 
+
+// showing trending gifs on load
+
 export const homePage = async () => {
-    console.log('home')
-      // create element for main
+    // console.log('home')
+
+    // create element for main
     const main = document.createElement('main')
 
     // create elements for section
@@ -53,11 +57,11 @@ export const homePage = async () => {
     // gets data from the input value (fetch.js)
     // let, because data changes based on input value
     let data = await receiveData(input.value)
-    console.log(data.data[0])
+    // console.log(data.data[0])
     // function createHomePage is carried out (home.js)
     reloadHomePage(data.data, sectionForGifs)
 
-    // IF the button gets clicked, data will be fetched again
+    // IF the form gets submitted, data will be fetched again
     // but this time using the input value
     form.addEventListener('submit', async function (event) {
         event.preventDefault()
