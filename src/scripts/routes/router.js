@@ -1,5 +1,5 @@
-import { homePage } from '../views/home.js'
-import { detailPage } from '../views/detail.js'
+import { homePage } from '../views/homePage.js'
+import { detailPage } from '../views/detailPage.js'
 
 
 

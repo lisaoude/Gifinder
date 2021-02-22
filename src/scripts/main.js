@@ -1,4 +1,4 @@
-import router from './modules/routes/router.js'
+import router from './routes/router.js'
 
 
 // this function shows the trending gifs

@@ -1,5 +1,5 @@
 import { body } from '../config/config.js'
-import { receiveData } from '../data/fetch.js'
+import { receiveData } from '../modules/getData.js'
 
 
 // showing clicked gif and detail info

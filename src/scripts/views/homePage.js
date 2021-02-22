@@ -1,5 +1,5 @@
-import { receiveData } from '../data/fetch.js'
-import { reloadHomePage } from '../components/gifs.js'
+import { receiveData } from '../modules/getData.js'
+import { reloadHomePage } from '../modules/createGifs.js'
 import { body, sectionForGifs } from '../config/config.js'
 
 
