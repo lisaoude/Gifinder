@@ -1,5 +1,5 @@
 import { homePage } from '../views/homePage.js'
-import { detailPage } from '../views/detailPage.js'
+// import { detailPage } from '../views/detailPage.js'
 
 
 
@@ -22,20 +22,20 @@ export default function router() {
       },
 
       // if theres 'gif / a gif id' behind the '/'
-      'gif/:id': async (id) => {
+      // 'gif/:id': async (id) => {
 
-        // select main with class of homePage
-        const removeHome = document.querySelector('.homePage')
+      //   // select main with class of homePage
+      //   const removeHome = document.querySelector('.homePage')
        
-        // if the homePage is there, remove it
-        if (removeHome !== null) {
-          removeHome.remove()
-        }
+      //   // if the homePage is there, remove it
+      //   if (removeHome !== null) {
+      //     removeHome.remove()
+      //   }
        
-        // and fetch the data from the API using the gifs ID
-        const res = await fetch(`https://api.giphy.com/v1/gifs/${id}?&api_key=JzbS3qH49ykiVKnHZx0z5M0gjNPVMbh3`)
-        const data = await res.json()
-        detailPage(data.data)
-      },
+      //   // and fetch the data from the API using the gifs ID
+      //   const res = await fetch(`https://api.giphy.com/v1/gifs/${id}?&api_key=JzbS3qH49ykiVKnHZx0z5M0gjNPVMbh3`)
+      //   const data = await res.json()
+      //   detailPage(data.data)
+      // },
     })
 }

@@ -4,6 +4,4 @@ export const
     searchType = 'search?q=',
     trendingType = 'trending',
     key = 'JzbS3qH49ykiVKnHZx0z5M0gjNPVMbh3',
-    limit = 20,
-    body = document.querySelector('body'),
-    sectionForGifs = document.createElement('section')
+    limit = 20

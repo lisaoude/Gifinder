@@ -1,30 +1,53 @@
-import { body } from '../config/config.js'
-import { receiveData } from '../modules/getData.js'
+// import { body } from '../config/config.js'
+// import { headOne } from '../components/createH1.js'
+// import { text } from '../components/createText.js'
+// import { receiveData } from '../modules/getData.js'
 
 
-// showing clicked gif and detail info
+// // showing clicked gif and detail info
+// export const detailPage = async (props) => {
+//   // console.log(props)
 
-  export const detailPage = async (props) => {
-  // console.log(props)
+//   const main = document.createElement('main')
 
-  let title = props.title
+//   let h1 = headOne(props.title)
+//   // let p = text(props.)
 
-  // const body = document.querySelector('body')
+//   const theGif = document.createElement('img')
 
-  const main = document.createElement('main')
-  const h1 = document.createElement('h1')
-  const h1Text = document.createTextNode(props.title)
+//   main.setAttribute('class', 'detailPage')
 
-  const theGif = document.createElement('img')
+//   theGif.src = `https://media.giphy.com/media/${props.id}/giphy.gif`
 
-  main.setAttribute('class', 'detailPage')
+//   body.appendChild(main)
+//   main.appendChild(h1)
+//   main.appendChild(theGif)
 
-  theGif.src = `https://media.giphy.com/media/${props.id}/giphy.gif`
+//   let data = await receiveData(props.id)
+  
+// }
 
-  body.appendChild(main)
-  main.appendChild(h1)
-  h1.appendChild(h1Text)
-  main.appendChild(theGif)
 
-  let data = await receiveData(props.id)
-}
+
+
+
+// <header>
+// <h1> Gifinder </h1>
+// <h2> Title of gif </h2>
+// </header>
+
+// <section>
+// <img src="" alt="">
+// </section>
+
+// <section>
+// <h3> Gif details </h3>
+// <h4> Posted by </h4>
+// <p> username (props.username) or (props.user.display_name)</p>
+
+// <h4> Posted at </h4>
+// <p> import_datetime </p>
+
+// <h4> Get more info at </h4>
+// <a href=""> bitly_url </a>
+// </section> 
