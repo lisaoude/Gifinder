@@ -1,97 +1,16 @@
-// import { receiveData } from '../modules/getData.js'
-// import { reloadHomePage } from '../modules/createGifs.js'
-// import { body, sectionForGifs } from '../config/config.js'
-
-
-// // showing trending gifs on load
-
-// export const homePage = async () => {
-//     // console.log('home')
-
-//     const body = document.querySelector('body')
-//     const section = document.createElement('section')
-
-//     // create element for main
-//     const main = document.createElement('main')
-
-//     // create elements for section
-//     const header = document.createElement('header')
-//     const h1 = document.createElement('h1')
-//     const h2 = document.createElement('h2')
-
-//     // create elements for form
-//     const form = document.createElement('form')
-//     const input = document.createElement('input')
-//     const button = document.createElement('button')
-//     const buttonText = document.createTextNode('Show me the gifs!')
-
-//     // give h1 and h2 their content
-//     h1.innerHTML = 'Get a Gif!'
-//     h2.innerHTML = 'What kind of gifs would you like?'
-
-//     // give the main a class (for styling purposes)
-//     main.setAttribute('class', 'homePage')
-
-//     // set some attributes for input and button
-//     input.setAttribute('type', 'text')
-//     input.setAttribute('id', 'input')
-//     input.setAttribute('name', 'giftype')
-//     input.setAttribute('required', 'required')
-//     input.setAttribute('placeholder', 'Tell me!')
-//     button.setAttribute('id', 'button')
-//     button.setAttribute('type', 'submit')
-//     button.setAttribute('value', 'go')
-
-//     // set id to section for gifs
-//     section.setAttribute('id', 'gifContainer')
-
-//     // append elements to html, inside the correct parents
-//     body.appendChild(main)
-//     main.appendChild(header)
-//     main.appendChild(form)
-//     main.appendChild(section)
-//     header.appendChild(h1)
-//     header.appendChild(h2)
-//     form.appendChild(input)
-//     form.appendChild(button)
-//     button.appendChild(buttonText)
-    
-
-//     // gets data from the input value (fetch.js)
-//     // let, because data changes based on input value
-//     let data = await receiveData(input.value)
-//     // console.log(data.data[0])
-//     // function createHomePage is carried out (home.js)
-//     reloadHomePage(data.data, section)
-
-//     // IF the form gets submitted, data will be fetched again
-//     // but this time using the input value
-//     form.addEventListener('submit', async function (event) {
-//         event.preventDefault()
-//          data = await receiveData(input.value)
-//           reloadHomePage(data.data, section)
-//      }) 
-// }
-
-
-
-
-
-// <header>
-// <h1> Gifinder </h1>
-// <h2> Get a Gif! </h2>
-// <h3> What kind of gifs would you like? </h3>
-// </header>
-
-// <form action="">
-// etc
-// </form>
 import { receiveData } from '../modules/getData.js'
 import { reloadHomePage } from '../modules/createGifs.js'
 import { Body, Main, homeHeader, Form, inputField, Button, Section } from '../components/index.js'
 
+const body = Body()
+const main = Main('homePage')
+const header = homeHeader('homeHeader')
+const form = Form()
+let input = inputField()
+const button = Button('Show the gifs')
+const section = Section('gifContainer')
 
-const loadHomePage = async () => {
+const gifsHomePage = async () => {
     // gets data from the input value (fetch.js)
     // let, because data changes based on input value
     let data = await receiveData(input.value)
@@ -111,22 +30,6 @@ const loadHomePage = async () => {
 
 export const homePage = () => {
 
-    const body = Body()
-    const main = Main('homePage')
-    const header = homeHeader('homeHeader')
-    const form = Form()
-    let input = inputField()
-    const button = Button('Show the gifs')
-    const section = Section('gifContainer')
-
-    // let input = document.createElement('input')
-
-    // input.setAttribute('type', 'text')
-    // input.setAttribute('id', 'input')
-    // input.setAttribute('name', 'giftype')
-    // input.setAttribute('required', 'required')
-    // input.setAttribute('placeholder', 'Tell me!')
-
     body.appendChild(main)
     main.appendChild(header)
     main.appendChild(form)
@@ -134,7 +37,7 @@ export const homePage = () => {
     form.appendChild(button)
     main.appendChild(section)
 
-    loadHomePage()
+    gifsHomePage()
 }
 
 homePage ()

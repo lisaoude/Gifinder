@@ -1,5 +1,4 @@
-export const Header = (idName) => {
+export const Header = () => {
     let element = document.createElement('header')
-    element.setAttribute('id', idName)
     return element
 }
