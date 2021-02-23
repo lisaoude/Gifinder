@@ -1,6 +1,6 @@
-export const headOne = (item) => {
+export const headOne = () => {
     let element = document.createElement('h1')
-    let textnode = document.createTextNode(item)
+    let textnode = document.createTextNode('Gifinder')
     element.appendChild(textnode)
     return element
 }

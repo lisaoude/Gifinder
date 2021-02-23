@@ -40,4 +40,3 @@ export const homePage = () => {
     gifsHomePage()
 }
 
-homePage ()
