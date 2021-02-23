@@ -1,6 +1,6 @@
 import { receiveData } from '../modules/getData.js'
 import { reloadHomePage } from '../modules/createGifs.js'
-import { body, sectionForGifs } from '../config/config.js'
+// import { body, sectionForGifs } from '../config/config.js'
 
 
 // showing trending gifs on load
@@ -8,11 +8,14 @@ import { body, sectionForGifs } from '../config/config.js'
 export const homePage = async () => {
     // console.log('home')
 
+    const body = document.querySelector('body')
+    const section = document.createElement('section')
+
     // create element for main
     const main = document.createElement('main')
 
     // create elements for section
-    const sectionForText = document.createElement('section')
+    const header = document.createElement('header')
     const h1 = document.createElement('h1')
     const h2 = document.createElement('h2')
 
@@ -40,15 +43,15 @@ export const homePage = async () => {
     button.setAttribute('value', 'go')
 
     // set id to section for gifs
-    sectionForGifs.setAttribute('id', 'gifContainer')
+    section.setAttribute('id', 'gifContainer')
 
     // append elements to html, inside the correct parents
     body.appendChild(main)
-    main.appendChild(sectionForText)
+    main.appendChild(header)
     main.appendChild(form)
-    main.appendChild(sectionForGifs)
-    sectionForText.appendChild(h1)
-    sectionForText.appendChild(h2)
+    main.appendChild(section)
+    header.appendChild(h1)
+    header.appendChild(h2)
     form.appendChild(input)
     form.appendChild(button)
     button.appendChild(buttonText)
@@ -59,13 +62,13 @@ export const homePage = async () => {
     let data = await receiveData(input.value)
     // console.log(data.data[0])
     // function createHomePage is carried out (home.js)
-    reloadHomePage(data.data, sectionForGifs)
+    reloadHomePage(data.data, section)
 
     // IF the form gets submitted, data will be fetched again
     // but this time using the input value
     form.addEventListener('submit', async function (event) {
         event.preventDefault()
          data = await receiveData(input.value)
-          reloadHomePage(data.data, sectionForGifs)
+          reloadHomePage(data.data, section)
      }) 
 }

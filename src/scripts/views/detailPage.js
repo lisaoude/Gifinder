@@ -9,6 +9,8 @@ import { receiveData } from '../modules/getData.js'
 
   let title = props.title
 
+  // const body = document.querySelector('body')
+
   const main = document.createElement('main')
   const h1 = document.createElement('h1')
   const h1Text = document.createTextNode(props.title)
@@ -26,6 +28,3 @@ import { receiveData } from '../modules/getData.js'
 
   let data = await receiveData(props.id)
 }
-
-
-// note: more content will be added to this page!
