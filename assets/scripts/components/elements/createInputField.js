@@ -3,9 +3,9 @@ export const inputField = () => {
 
   element.setAttribute('type', 'text')
   element.setAttribute('id', 'input')
-  element.setAttribute('name', 'giftype')
+//   element.setAttribute('name', 'giftype')
   element.setAttribute('required', 'required')
-  element.setAttribute('placeholder', 'Tell me!')
+  element.setAttribute('placeholder', 'What kind of gifs would you like?')
 
   return element
 }
