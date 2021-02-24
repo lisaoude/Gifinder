@@ -33,9 +33,10 @@ export default function router() {
       }
        
       // and fetch the data from the API using the gifs ID
-      const response = await fetch(`https://api.giphy.com/v1/gifs/${id}?&api_key=JzbS3qH49ykiVKnHZx0z5M0gjNPVMbh3`)
-      const data = await response.json()
-      detailPage(data.data)
+      // const response = await fetch(`https://api.giphy.com/v1/gifs/${id}?&api_key=JzbS3qH49ykiVKnHZx0z5M0gjNPVMbh3`)
+      // const data = await response.json()
+      // detailPage(data.data)
+      detailPage(id)
     },
   })
 }
