@@ -12,47 +12,49 @@ export const reloadHomePage = (props, section) => {
 
 
 // showing gifs in html
- const createGifs = (element, props) => {
+const createGifs = (element, props) => {
 
   // for each props item (gif)
   props.forEach(item => {
 
-      // create a element
-      const clickable = document.createElement('a')
+    // create a element
+    const clickable = document.createElement('a')
 
-      // create an img element
-      const actualGifs = document.createElement('img')
+    // create an img element
+    const actualGifs = document.createElement('img')
 
-      clickable.href = `#gif/${item.id}`;
+    clickable.href = `#gif/${item.id}`;
 
-      // identify the source
-      actualGifs.src = `https://media.giphy.com/media/${item.id}/giphy.gif`
+    // identify the source
+    actualGifs.src = `https://media.giphy.com/media/${item.id}/giphy.gif`
 
-      // give each their own original title
-      actualGifs.title = `${item.title}`
+    // give each their own original title
+    actualGifs.title = `${item.title}`
 
       
-      clickable.appendChild(actualGifs)
-      element.appendChild(clickable)
+    clickable.appendChild(actualGifs)
+    element.appendChild(clickable)
   })
+
   return element
 }
 
+
 // delete previously loaded gifs
- const deleteGifs = () => {
+const deleteGifs = () => {
 
   // turn html element into variable 
   const container = document.querySelector('#gifContainer')
 
   // if the container had any content (gifs)
-   if (container.hasChildNodes()) {
+  if (container.hasChildNodes()) {
 
-     // convert to array to be able to remove the items in this array
-     const previousGifs = Array.from(container.childNodes)
+    // convert to array to be able to remove the items in this array
+    const previousGifs = Array.from(container.childNodes)
 
-     // delete each items in this array
-     previousGifs.forEach(item => {
-       item.remove()
-     })
+    // delete each items in this array
+    previousGifs.forEach(item => {
+      item.remove()
+    })
   }
 }

@@ -1,4 +1,5 @@
 export const Form = () => {
-    let element = document.createElement('form')
-    return element
+  let element = document.createElement('form')
+  
+  return element
 }

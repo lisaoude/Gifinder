@@ -1,12 +1,12 @@
 export const Button = (innerText) => {
-    let element = document.createElement('button')
-    let buttonText = document.createTextNode(innerText)
+  let element = document.createElement('button')
+  let buttonText = document.createTextNode(innerText)
 
-    element.setAttribute('id', 'button')
-    element.setAttribute('type', 'submit')
-    element.setAttribute('value', 'go')
+  element.setAttribute('id', 'button')
+  element.setAttribute('type', 'submit')
+  element.setAttribute('value', 'go')
 
-    element.appendChild(buttonText)
+  element.appendChild(buttonText)
 
-    return element
+  return element
 }
