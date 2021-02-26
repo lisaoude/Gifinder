@@ -2,12 +2,11 @@
 // and loads the new ones using the input value
 export const reloadHomePage = (props, section) => {
 
-  // remove previous gifs before loading next (gifs.js)
-  let remove = deleteGifs()
+  // remove previous gifs before loading next
+  const remove = deleteGifs()
 
-  // append gifs to section (gifs.js)
-  let gifs = createGifs(section, props)
-  
+  // append gifs to section
+  const gifs = createGifs(section, props)
 }
 
 
@@ -17,13 +16,15 @@ const createGifs = (element, props) => {
   // for each props item (gif)
   props.forEach(item => {
 
-    // create a element
+    // create 'a' element
     const clickable = document.createElement('a')
 
+    // add href to 'a' element
+    clickable.href = `#gif/${item.id}`;
+
+    
     // create an img element
     const actualGifs = document.createElement('img')
-
-    clickable.href = `#gif/${item.id}`;
 
     // identify the source
     actualGifs.src = `https://media.giphy.com/media/${item.id}/giphy.gif`
@@ -34,10 +35,14 @@ const createGifs = (element, props) => {
       
     clickable.appendChild(actualGifs)
     element.appendChild(clickable)
+
   })
 
   return element
 }
+
+
+
 
 
 // delete previously loaded gifs
@@ -58,3 +63,4 @@ const deleteGifs = () => {
     })
   }
 }
+

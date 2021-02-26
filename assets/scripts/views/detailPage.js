@@ -28,22 +28,34 @@ export const detailPage = async (id) => {
   const main = Main('detailPage')
   const header = Header()
   const h1 = headOne()
+
+  const gif = document.createElement('img')
+  gif.src = `https://media.giphy.com/media/${id}/giphy.gif`
+
   const h3 = headThree('Gif Details')
   const h4Posted = headFour('Posted at')
-  const h4Source = headFour('Original source?')
-  const source = Text('Right here!')
+  const h4Source = headFour('Original source')
   const h4Info = headFour('Wanna view on Giphy.com? Click!')
   const container = Section('detailContainer')
   const details = Section('detailSection')
 
+
   // let, because the text shown changes depending on the gif
+  // gif title
   let h2 = headTwo(data.data.title)
+
+  // posted time
   let posted = Text(data.data.import_datetime)
-  let sourceHref = Href(data.data.source_post_url)
+
+  // original source text
+  let sourceText = Text(data.data.source)
+
+  // original source href
+  let source = Href(data.data.source)
+
+  // view on giphy 
   let a = Href(data.data.bitly_url)
 
-  const gif = document.createElement('img')
-  gif.src = `https://media.giphy.com/media/${id}/giphy.gif`
 
   body.appendChild(main)
   main.appendChild(header)
@@ -59,8 +71,8 @@ export const detailPage = async (id) => {
   details.appendChild(h4Posted)
   details.appendChild(posted)
   details.appendChild(h4Source)
-  details.appendChild(sourceHref)
-  sourceHref.appendChild(source)
+  details.appendChild(source)
+  source.appendChild(sourceText)
   details.appendChild(a)
   a.appendChild(h4Info)
 }

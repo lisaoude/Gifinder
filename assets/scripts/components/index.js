@@ -18,6 +18,8 @@ import { Button } from './elements/createButton.js'
 
 import { Section } from './elements/createSection.js'
 
+import { Footer } from './elements/createFooter.js'
+
 
 
 export {
@@ -39,5 +41,7 @@ export {
   inputField,
   Button,
     
-  Section
+  Section,
+
+  Footer
 }

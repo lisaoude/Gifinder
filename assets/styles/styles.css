@@ -102,6 +102,25 @@ button {
   font-size: 1.06em;
 }
 
+footer {
+  display: flex;
+  width: 100%;
+  height: auto;
+  justify-content: center;
+  margin: 3em 0;
+}
+
+footer p {
+  color: black;
+  margin: 2em;
+}
+
+footer img {
+  width: var(--default-width);
+  height: auto;
+  margin: 2em;
+}
+
 
 
 
@@ -162,6 +181,7 @@ button {
 }
 
 
+
 /*****************************************/
 /*          DETAIL PAGE STYLING          */
 /*****************************************/
@@ -208,3 +228,6 @@ button {
     height: auto;
   }
 }
+
+
+

@@ -22,7 +22,7 @@ export default function router() {
     },
 
       // if theres 'gif / a gif id' behind the '/'
-    'gif/:id': async (id) => {
+    'gif/:id': (id) => {
 
       // select main with class of homePage
       const removeHome = document.querySelector('#homePage')

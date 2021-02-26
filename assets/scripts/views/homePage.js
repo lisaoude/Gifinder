@@ -8,24 +8,26 @@ import {
   Form,
   inputField,
   Button,
-  Section 
+  Section,
+  Footer 
 } from '../components/index.js'
 
 const body = Body()
 const main = Main('homePage')
 const header = homeHeader('homeHeader')
 const form = Form()
-let input = inputField()
+const input = inputField()
 const button = Button('Show the gifs')
 const section = Section('gifContainer')
+const footer = Footer()
 
 const gifsHomePage = async () => {
-  // gets data from the input value (fetch.js)
-  // let, because data changes based on input value
+  // gets data from the input value (getData.js)
+  // if input value is empty, the trending gifs will be shown
+  // let, because the data changes
   let data = await receiveData(input.value)
-  // console.log(data.data[0])
 
-  // function createHomePage is carried out (home.js)
+  // function reloadHomePage is carried out (createGifs.js)
   reloadHomePage(data.data, section)
 
   // IF the form gets submitted, data will be fetched again
@@ -45,6 +47,7 @@ export const homePage = () => {
   form.appendChild(input)
   form.appendChild(button)
   main.appendChild(section)
+  main.appendChild(footer)
 
   gifsHomePage()
 }
