@@ -1,6 +1,6 @@
+// importing elements
 import { receiveData } from '../modules/getData.js'
 import { reloadHomePage } from '../modules/createGifs.js'
-
 import {
   Body,
   Main,
@@ -12,6 +12,8 @@ import {
   Footer 
 } from '../components/index.js'
 
+
+// assigning imports to variables
 const body = Body()
 const main = Main('homePage')
 const header = homeHeader('homeHeader')
@@ -21,9 +23,12 @@ const button = Button('Show the gifs')
 const section = Section('gifContainer')
 const footer = Footer()
 
+
+// function to put getting data and showing the gifs together
 const gifsHomePage = async () => {
+
   // gets data from the input value (getData.js)
-  // if input value is empty, the trending gifs will be shown
+  // if input value is empty, the trending gifs will be shown (as declared in getData.js)
   // let, because the data changes
   let data = await receiveData(input.value)
 
@@ -39,6 +44,8 @@ const gifsHomePage = async () => {
   }) 
 }
 
+
+// appending elements into html
 export const homePage = () => {
 
   body.appendChild(main)

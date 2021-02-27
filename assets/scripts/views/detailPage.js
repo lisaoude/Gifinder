@@ -54,6 +54,7 @@ export const detailPage = async (id) => {
   let a = Href(data.data.bitly_url)
 
 
+  // appended elements into html
   body.appendChild(main)
   main.appendChild(header)
 
