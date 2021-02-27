@@ -9,10 +9,24 @@ import {
   headFour,
   Text,
   Href,
-  Section
+  Section,
+  Footer
 } from '../components/index.js'
 
 
+// assigning imports to variables
+const body = Body()
+const main = Main('detailPage')
+const header = Header()
+const h1 = headOne()
+const gif = document.createElement('img')
+const h3 = headThree('Gif Details')
+const h4Posted = headFour('Posted at')
+const h4Source = headFour('Original source')
+const h4Info = headFour('Wanna view on Giphy.com? Click!')
+const container = Section('detailContainer')
+const details = Section('detailSection')
+const footer = Footer()
 
 
 // showing clicked gif and detail info
@@ -21,24 +35,7 @@ export const detailPage = async (id) => {
   const response = await fetch(`https://api.giphy.com/v1/gifs/${id}?&api_key=JzbS3qH49ykiVKnHZx0z5M0gjNPVMbh3`)
   const data = await response.json()
 
-  console.log(data.data)
-
-  // assigning fixed variables to imported elements
-  const body = Body()
-  const main = Main('detailPage')
-  const header = Header()
-  const h1 = headOne()
-
-  const gif = document.createElement('img')
   gif.src = `https://media.giphy.com/media/${id}/giphy.gif`
-
-  const h3 = headThree('Gif Details')
-  const h4Posted = headFour('Posted at')
-  const h4Source = headFour('Original source')
-  const h4Info = headFour('Wanna view on Giphy.com? Click!')
-  const container = Section('detailContainer')
-  const details = Section('detailSection')
-
 
   // let, because the text shown changes depending on the gif
   // gif title
@@ -75,4 +72,5 @@ export const detailPage = async (id) => {
   source.appendChild(sourceText)
   details.appendChild(a)
   a.appendChild(h4Info)
+  main.appendChild(footer)
 }

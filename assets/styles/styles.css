@@ -107,16 +107,18 @@ footer {
   width: 100%;
   height: auto;
   justify-content: center;
-  margin: 3em 0;
+  align-items: center;
+  margin: 5em 0em 1em 0em;
 }
 
 footer p {
   color: black;
+  font-weight: 600;
   margin: 2em;
 }
 
 footer img {
-  width: var(--default-width);
+  width: calc( 0.75 * var(--default-width));
   height: auto;
   margin: 2em;
 }
