@@ -1,5 +1,6 @@
 import { homePage } from '../views/homePage.js'
 import { detailPage } from '../views/detailPage.js'
+import { errorState } from '../views/errorState.js'
 
 
 
@@ -10,6 +11,7 @@ export default function router() {
     // if theres nothing behind the '/'
     '': (body) => {
 
+      try {
       // select main with class of detailPage
       const removeDetail = document.querySelector('#detailPage')
 
@@ -19,6 +21,10 @@ export default function router() {
       }
 
     homePage()
+
+      } catch {
+        errorState()
+      }
     },
 
       // if theres 'gif / a gif id' behind the '/'

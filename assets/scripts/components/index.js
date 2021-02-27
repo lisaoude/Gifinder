@@ -20,6 +20,8 @@ import { Section } from './elements/createSection.js'
 
 import { Footer } from './elements/createFooter.js'
 
+import { errorMessage } from './elements/createErrorMessage.js'
+
 
 
 export {
@@ -43,5 +45,7 @@ export {
     
   Section,
 
-  Footer
+  Footer,
+
+  errorMessage
 }
