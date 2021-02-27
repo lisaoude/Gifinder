@@ -6,8 +6,9 @@ import {
   limit
 } from '../config/config.js'
 
-// show either trending or searched for gifs
-export const receiveData = async (query) => {
+// home: show either trending or searched for gifs
+// based on empty of filled input field
+export const dataHomePage = async (query) => {
 
   // if the input field is empty
   if (query === '') {
