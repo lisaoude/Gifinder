@@ -9,7 +9,9 @@ import {
   headFour,
   Text,
   Href,
-  Section
+  Section,
+  Footer,
+  backButton
 } from '../components/index.js'
 
 
@@ -42,6 +44,8 @@ export const detailPage = async (id) => {
   const h4Info = headFour('Wanna view on Giphy.com? Click!')
   const container = Section('detailContainer')
   const details = Section('detailSection')
+  const footer = Footer()
+  const back = backButton('/')
 
 
   // let, because the text shown changes depending on the gif
@@ -65,6 +69,7 @@ export const detailPage = async (id) => {
   body.appendChild(main)
   main.appendChild(header)
 
+  header.appendChild(back)
   header.appendChild(h1)
   header.appendChild(h2)
 
@@ -80,4 +85,5 @@ export const detailPage = async (id) => {
   source.appendChild(sourceText)
   details.appendChild(a)
   a.appendChild(h4Info)
+  main.appendChild(footer)
 }

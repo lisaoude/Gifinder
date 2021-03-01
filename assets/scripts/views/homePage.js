@@ -11,7 +11,7 @@ import {
   inputField,
   Button,
   Section,
-  Footer 
+  Footer
 } from '../components/index.js'
 
 

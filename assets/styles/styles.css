@@ -16,16 +16,6 @@ html {
 }
 
 body {
-  /* red orange */
-  /* background: linear-gradient(-45deg, #FFD100, #FF8A00, #FF5C00, #FF0000); */ 
-
-  /* green blue purple */
-  /* background: linear-gradient(45deg, #3FFF8C, #3FFFFF, #3F75FF, #9F3FFF); */
-
-  /* blue */
-  /* background: linear-gradient(-45deg, #2D20C2, #3F69FF, #3FA3FF, #81C1FC); */
-
-  /* darker blue */
   background: linear-gradient(-225deg, #050044, #000AFF, #1572FF, #64B5FF);
   background-size: 400% 400%;
   animation: gradient 15s ease infinite;
@@ -88,9 +78,14 @@ h3 {
 }
 
 h4 {
-    font-weight: 600;
-    font-size: 1.25em;
+  font-weight: 600;
+  font-size: 1.25em;
 }
+
+ p {
+   font-weight: 400;
+   font-size: 1em;
+ }
 
 input {
   font-weight: 400;
@@ -100,27 +95,6 @@ input {
 button {
   font-weight: 600;
   font-size: 1.06em;
-}
-
-footer {
-  display: flex;
-  width: 100%;
-  height: auto;
-  justify-content: center;
-  align-items: center;
-  margin: 5em 0em 1em 0em;
-}
-
-footer p {
-  color: black;
-  font-weight: 600;
-  margin: 2em;
-}
-
-footer img {
-  width: calc( 0.75 * var(--default-width));
-  height: auto;
-  margin: 2em;
 }
 
 
@@ -187,15 +161,63 @@ footer img {
 /*****************************************/
 /*          DETAIL PAGE STYLING          */
 /*****************************************/
+/* header */
 #detailPage header {
+  display: flex;
+  flex-direction: column;
   width: auto;
   height: 11em;  
+  margin-bottom: 2em;
 }
 
 #detailPage header h2 {
   font-weight: 600;
   font-size: 2em;     
 }
+
+/* back button */
+#detailPage header a {
+  width: 5em;
+  height: 5em;
+}
+
+#detailPage header a div {
+  position: relative;
+  top: 18px;
+  left: 5px;
+  width: 40px;
+  height: 6px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  margin-bottom: 2em;
+}
+
+#detailPage header a div::before {
+  position: absolute;
+  content: "";
+  top: 5px;
+  left: -5px;
+  width: 20px;
+  height: 6px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  transform: rotate(45deg)
+}
+
+
+#detailPage header a div::after {
+  position: absolute;
+  content: "";
+  top: -5px;
+  left: -5px;
+  width: 20px;
+  height: 6px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  transform: rotate(-45deg)
+}
+
+
 
 /* section */
 #detailPage #detailContainer {
@@ -224,12 +246,56 @@ footer img {
   text-decoration: none;
 }
 
-@media screen and (max-width: 600px) {
-  #detailPage #detailContainer img {
-    width: var(--default-width);
-    height: auto;
-  }
+
+/*****************************************/
+/*                 FOOTER                */
+/*****************************************/
+footer {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 5em 0em 1em 0em;
+}
+
+footer p {
+  color: black;
+  font-size: 0.8em;
+  margin: 0.6em;
+}
+
+footer img {
+  width: calc( 0.35 * var(--default-width));
+  height: auto;
+  margin-bottom: 0.75em;
 }
 
 
 
+/*****************************************/
+/*              SMALL SCREEN             */
+/*****************************************/
+@media screen and (max-width: 600px) {
+
+  #detailPage header {
+    margin-bottom: 3em;
+  }
+
+  #detailPage header h2 {
+    font-size: 1.5em;     
+  }
+  
+  #detailPage #detailContainer {
+    flex-direction: column;
+  }
+
+  #detailPage #detailContainer img {
+    width: var(--default-width);
+    height: auto;
+    margin-bottom: 2em;
+  }
+  
+}

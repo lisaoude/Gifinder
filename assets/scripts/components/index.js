@@ -20,7 +20,7 @@ import { Section } from './elements/createSection.js'
 
 import { Footer } from './elements/createFooter.js'
 
-import { errorMessage } from './elements/createErrorMessage.js'
+import { backButton } from './elements/createBackButton.js'
 
 
 
@@ -47,5 +47,5 @@ export {
 
   Footer,
 
-  errorMessage
+  backButton
 }
