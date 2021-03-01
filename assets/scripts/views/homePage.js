@@ -11,7 +11,8 @@ import {
   inputField,
   Button,
   Section,
-  Footer
+  Footer,
+  loadingState
 } from '../components/index.js'
 
 
@@ -24,6 +25,7 @@ const input = inputField()
 const button = Button('Show the gifs')
 const section = Section('gifContainer')
 const footer = Footer()
+const loader = loadingState()
 
 
 // function to put getting data and showing the gifs together
@@ -55,6 +57,7 @@ export const homePage = () => {
   main.appendChild(form)
   form.appendChild(input)
   form.appendChild(button)
+  main.appendChild(loader)
   main.appendChild(section)
   main.appendChild(footer)
 

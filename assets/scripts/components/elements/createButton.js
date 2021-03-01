@@ -1,12 +1,17 @@
+// making a button
+
+// let, because the button can change
+// in appearance and innertext wise
+// and can be re-used later
+
 export const Button = (innerText) => {
   let element = document.createElement('button')
-  let buttonText = document.createTextNode(innerText)
+  let textnode = document.createTextNode(innerText)
 
-  element.setAttribute('id', 'button')
   element.setAttribute('type', 'submit')
   element.setAttribute('value', 'go')
 
-  element.appendChild(buttonText)
+  element.appendChild(textnode)
 
   return element
 }

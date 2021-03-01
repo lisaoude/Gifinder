@@ -1,4 +1,5 @@
 // export variables needed in other files
+
 export const
   url = 'https://api.giphy.com/v1/gifs/',
   searchType = 'search?q=',

@@ -1,3 +1,4 @@
+// importing elements
 import { homePage } from '../views/homePage.js'
 import { detailPage } from '../views/detailPage.js'
 

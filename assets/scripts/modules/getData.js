@@ -1,3 +1,4 @@
+// importing elements
 import {
   url,
   trendingType,
@@ -5,6 +6,7 @@ import {
   key,
   limit
 } from '../config/config.js'
+
 
 // home: show either trending or searched for gifs
 // based on empty of filled input field

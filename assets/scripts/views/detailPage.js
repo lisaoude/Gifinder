@@ -1,4 +1,4 @@
-// importing elements
+// importing elements from other file
 import { 
   Body, 
   Main,
@@ -33,7 +33,7 @@ export const detailPage = async (id) => {
   const body = Body()
   const main = Main('detailPage')
   const header = Header()
-  const h1 = headOne()
+  const h1 = headOne('Gifinder')
 
   const gif = document.createElement('img')
   gif.src = `https://media.giphy.com/media/${id}/giphy.gif`

@@ -1,4 +1,4 @@
-// this function deletes the previous gifs
+// deletes the previously loaded gifs
 // and loads the new ones using the input value
 export const reloadHomePage = (props, section) => {
 
@@ -8,6 +8,7 @@ export const reloadHomePage = (props, section) => {
   // append gifs to section
   const gifs = createGifs(section, props)
 }
+
 
 
 // showing gifs in html
@@ -43,8 +44,6 @@ const createGifs = (element, props) => {
 
 
 
-
-
 // delete previously loaded gifs
 const deleteGifs = () => {
 
@@ -63,4 +62,3 @@ const deleteGifs = () => {
     })
   }
 }
-

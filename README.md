@@ -1,6 +1,6 @@
 # Gifinder :sparkles:
 
-** _Made for_ Web App From Scratch @ cmda-minor-web 2020 - 2021**
+_Made for Web App From Scratch @ cmda-minor-web 2020 - 2021_
 
 ## :pencil2: App description
 
@@ -37,7 +37,7 @@ Giphy has the largest GIF library in the world and their API makes it possible t
 
 ### :eyes: What can you do with this API?
 
-_All information can be found on [the Giphy website](https://giphy.com)_
+_All information can also be found on [the Giphy website](https://giphy.com)_
 
 - Return a random GIF
 - Show trending GIFs to users
@@ -57,20 +57,16 @@ _All information can be found on [the Giphy website](https://giphy.com)_
 
 I have implemented the following points into **_Gifinder_**:
 
-- Show trending GIFs to users
+**Home page**
 
-  - These are shown to the user on load of the home page
-
-<br/>
-
+- Show trending GIFs to users on load of the page
 - Let the user search for GIFs, using a word or phrase
 
-  - This can be done on the home page as well
-
 <br/>
 
-- Generate one or multiple GIFs by ID endpoint
-  - This is done on the detail page, where the user can navigate to by clicking on a GIF
+**Detail page**
+
+- Generate a GIF by ID endpoint
 
 <br/>
 

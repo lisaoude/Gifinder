@@ -12,7 +12,7 @@ html {
   --default-width: 15em;
   --default-height: 15em;
   --light-color: #ffffff;
-  --dark-color: #282828;
+  --dark-color: #181818;
 }
 
 body {
@@ -137,6 +137,10 @@ button {
   font-weight: 400;
 }
 
+#homePage form button:hover {
+  transform: scale(1.02);
+}
+
 /* section with gifs */
 #homePage #gifContainer {
   width: 100%;
@@ -149,6 +153,11 @@ button {
 }
 
 /* gifs */
+#homePage #gifContainer a {
+  max-width: var(--default-width);
+  max-height: var(--default-height);
+}
+  
 #homePage #gifContainer img {
   max-width: var(--default-width);
   max-height: var(--default-height);
@@ -156,7 +165,11 @@ button {
   box-shadow: 0px 0px 20px 10px rgba(40, 40, 40, 0.4);
 }
 
-
+/* hover over gifs */
+#homePage #gifContainer img:hover {
+  transform: scale(1.035);
+  box-shadow: 0px 0px 20px 10px rgba(225, 225, 225, 0.4);
+}
 
 /*****************************************/
 /*          DETAIL PAGE STYLING          */
@@ -298,4 +311,65 @@ footer img {
     margin-bottom: 2em;
   }
   
+}
+
+
+/*****************************************/
+/*             LOADING STATE             */
+/*****************************************/
+
+.hide {
+  display: none;
+  z-index: -1;
+}
+
+
+/* #loader {
+  position: absolute;
+  top: 28em;
+  left: 7em;
+  width: calc( 0.8 * var(--default-width));
+  height: calc( 0.8 * var(--default-width));
+  background-color: hotpink;
+} */
+
+#loader {
+  position: absolute;
+  top: 29em;
+  left: 10em;
+  display: inline-block;
+  width: 80px;
+  height: 80px;
+  animation: fade 3s;
+}
+
+#loader::after {
+  content: " ";
+  display: block;
+  width: 65px;
+  height: 65px;
+  margin: 8px;
+  border-radius: 50%;
+  border: 6px solid #fff;
+  border-color: #fff transparent #fff transparent;
+  animation: loader 1.25s linear infinite;
+}
+
+
+@keyframes loader {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes fade {
+  0% {
+    opacity: 100%
+  }
+  100% {
+    opacity: 0%;
+  }
 }

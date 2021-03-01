@@ -1,3 +1,5 @@
+// importing all separate elements
+
 import { Body } from './elements/selectBody.js'
 import { Main } from './elements/createMain.js'
 
@@ -18,11 +20,16 @@ import { Button } from './elements/createButton.js'
 
 import { Section } from './elements/createSection.js'
 
-import { Footer } from './elements/createFooter.js'
+import { Footer } from './makeFooter.js'
 
-import { backButton } from './elements/createBackButton.js'
+import { backButton } from './makeBackButton.js'
+
+import { loadingState } from './makeLoadingState.js'
 
 
+
+// and exporting them
+// for easy importing in other files
 
 export {
   Body,
@@ -47,5 +54,7 @@ export {
 
   Footer,
 
-  backButton
+  backButton,
+
+  loadingState
 }

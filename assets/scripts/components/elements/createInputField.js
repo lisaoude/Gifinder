@@ -1,3 +1,7 @@
+// creating inputfield
+
+// let, so I can use the same element multiple times
+
 export const inputField = () => {
   let element = document.createElement('input')
 
