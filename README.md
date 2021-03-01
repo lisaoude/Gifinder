@@ -1,13 +1,13 @@
-# Gifinder
+# Gifinder :sparkles:
 
-### Web App From Scratch @ cmda-minor-web 2020 - 2021
+** _Made for_ Web App From Scratch @ cmda-minor-web 2020 - 2021**
 
 ## :pencil2: App description
 
 Always wanted to quickly search for a specific GIF? **_Gifinder_** is here! By simply typing a word of choice, you will get 24 GIFs that meet your requirements!  
 By clicking on one of the GIFs, you will see that GIF's title, posted time, original source and a link to view the GIF at [Giphy.com](https://giphy.com)
 
-[**_Gifinder_** can be viewed right here](https://lisaoude.github.io/Gifinder/)
+[**_Gifinder_** can be viewed right here](https://gifinder-lisaoude.netlify.app/)
 
 <br/>
 
@@ -20,19 +20,19 @@ By clicking on one of the GIFs, you will see that GIF's title, posted time, orig
 
 ## :gem: What does this Web App do?
 
-- Show the trending GIFs on load
-- Show the user GIFs based on the value they haved typed into the input field
-- Show the user the details of a GIF they clicked on
+- Fetch & show the trending GIFs on load
+- Fetch & show the user GIFs based on the value they haved typed into the input field
+- Fetch & show the user the details of a GIF they clicked on
   <!-- - Provide the user with feedback while the content is loading -->
-  <!-- - Provide the user with feedback when an error occurs while loading the content -->
+  <!-- - Provide the user with feedback when hovering over a GIF -->
 
 <br/>
 
 ## :link: API
 
-### :gray_question: Which API did I use?
+### :question: Which API did I use?
 
-This Web App has been designed and developed with the help of [the Giphy API](https://developers.giphy.com/docs/api/).  
+This Web App has been designed and developed with the [the Giphy API](https://developers.giphy.com/docs/api/).  
 Giphy has the largest GIF library in the world and their API makes it possible to seamlessly integrate these GIFs into any application.
 
 ### :eyes: What can you do with this API?
