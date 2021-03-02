@@ -2,7 +2,7 @@
 
 _Made for Web App From Scratch @ cmda-minor-web 2020 - 2021_
 
-<!-- place mock-ups here -->
+![Gifinder Mockups](https://user-images.githubusercontent.com/57795294/109716112-b23b0f00-7ba4-11eb-93fd-34428f5c9a32.png)
 
 <!-------------------------- New Paragraph -------------------------->
 
@@ -95,15 +95,11 @@ I have implemented the following points into **_Gifinder_**:
 
 ### Actor Diagram
 
-#### Explanation
-
-...
+![Actor Diagram](https://user-images.githubusercontent.com/57795294/109714885-3b514680-7ba3-11eb-99ba-8e92a7a33fcb.png)
 
 ### Interaction Diagram
 
-#### Explanation
-
-...
+![Interaction Diagram](https://user-images.githubusercontent.com/57795294/109714880-3ab8b000-7ba3-11eb-85e4-a989ececc287.png)
 
 <br/>
 
@@ -115,7 +111,7 @@ I have implemented the following points into **_Gifinder_**:
 
 During the development of Gifinder, I worked with modules for the first time. In my previous 'projects', as far as we can even call it that, my whopping 3 to 100 lines of JavaScript would just live in the same document. I used such little JavaScript, that it wasn't necessary to split it up at all. Because I'm obviously using MUCH more JavaScript for Gifinder, modules are great to keep everything organized. My folder & files structure for Gifinder looks like this:
 
-![Folder & Files Structure](https://user-images.githubusercontent.com/57795294/109655197-484e4580-7b63-11eb-9b52-6cb54eef44b8.png)
+![Folder & Files Structure](https://user-images.githubusercontent.com/57795294/109702534-a5aeba80-7b94-11eb-9be8-33a680f1eb2f.png)
 
 <br/>
 
