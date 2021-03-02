@@ -290,3 +290,6 @@ I have used the following resources while creating my Web App:
 - Pure CSS Loader - Optimized Spinners for Web · Loading.io. (2020), from [Loading.io](https://loading.io/css/)
 - Complete list of github markdown emoji's. (2016), from [rxaviers](https://gist.github.com/rxaviers/7360908)
 - MDN. (2021, February 19). setTimeout() - Web APIs, from [MDN](https://developer.mozilla.org/en-US/docs/Web/API/WindowOrWorkerGlobalScope/setTimeout)
+- MDN. (2020, October 16). Array.prototype.map() - JavaScript, from [MDN](https://developer.mozilla.org/nl/docs/Web/JavaScript/Reference/Global_Objects/Array/map)
+- MDN. (2019, Match 23). Array.prototype.filter() - JavaScript, from [MDN](https://developer.mozilla.org/nl/docs/Web/JavaScript/Reference/Global_Objects/Array/filter)
+- MDN. (2021, February 19). Array.prototype.reduce() - JavaScript, from [MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/Reduce)
