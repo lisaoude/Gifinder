@@ -24,7 +24,7 @@ import { Footer } from './makeFooter.js'
 
 import { backButton } from './makeBackButton.js'
 
-import { loadingState } from './makeLoadingState.js'
+import { Container } from './elements/createContainer.js'
 
 
 
@@ -56,5 +56,5 @@ export {
 
   backButton,
 
-  loadingState
+  Container
 }

@@ -282,10 +282,8 @@ footer img {
   position: absolute;
   top: 29em;
   left: 10em;
-  display: inline-block;
-  width: 80px;
-  height: 80px;
-  animation: fade 3s;
+  width: 90px;
+  height: 90px;
 }
 
 #loader::after {
@@ -299,7 +297,6 @@ footer img {
   border-color: #fff transparent #fff transparent;
   animation: loader 1.25s linear infinite;
 }
-
 
 
 /*****************************************/

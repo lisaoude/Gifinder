@@ -1,14 +1,19 @@
 // importing elements
 import { homePage } from '../views/homePage.js'
 import { detailPage } from '../views/detailPage.js'
+import { loadingState } from '../views/loadingState.js'
 
 
-export default function router() {
+export function router() {
 
   routie({
 
     // if theres nothing behind the '/'
     '': (body) => {
+
+        // show loading state
+        loadingState()
+
         // select main with class of detailPage
         const removeDetail = document.querySelector('#detailPage')
 

@@ -237,8 +237,6 @@ Almost done! We just need to navigate to the localhost in the browser.
 
 This repository is licensed as [MIT](https://github.com/lisaoude/Gifinder/blob/master/LICENSE.txt) by © Lisa Oude Elferink, 2021
 
-...
-
 <br/>
 
 <!-------------------------- New Paragraph -------------------------->

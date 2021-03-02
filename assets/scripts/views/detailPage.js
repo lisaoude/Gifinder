@@ -64,7 +64,9 @@ export const detailPage = async (id) => {
   // view on giphy 
   let a = Href(data.data.bitly_url)
 
-
+  
+  // NOTE 2: this has to happen inside the same function as well
+  // because the elements are assigning to the fixed variables inside this function
   // append elements into html
   body.appendChild(main)
   main.appendChild(header)
