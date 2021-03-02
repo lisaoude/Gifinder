@@ -9,10 +9,10 @@ export const loadingState = () => {
   // if the element doesn't have a class of hide, add it
   loader.classList.toggle('hide');  
 
-  //after 1000ms classlist is toggled again
+  //after 700ms classlist is toggled again
   // if the element has a class of hide, remove it
   // if the element doesn't have a class of hide, add it
   setTimeout(function loadingOff(){
     loader.classList.toggle('hide');  
-  }, [1000]);
+  }, [700]);
 }
