@@ -178,14 +178,21 @@ import {
 
 #### Routes
 
-- The routes folder contains my ``router.js` file, where all possible routes are handled by the router. Because I use routie as my router, there's also a `routie.min.js` file. This file
+- The routes folder contains my ``router.js` file, where all possible routes are handled by the router. Because I use routie as my router, there's also a `routie.min.js` file. This file is provided for by Routie, and does not contain self-written code.
 
 <br/>
 
 #### Views
 
 - The views folder contains all the pages that are rendered after a request has been made. These two pages use the imports from the `index.js` file in order to build all the HTML from scratch.
-  <br/>
+
+<br/>
+
+#### States
+
+- The states folder contains the loading state, which is shown during the loading of the gifs.
+
+<br/>
 
 #### Main.js
 
@@ -200,7 +207,8 @@ import {
 ### 1. :dancers: Cone this repo
 
 Before we can get started, we'll need to clone this repo.  
-This can be done by typing the following line of code into your terminal:  
+This can be done by typing the following line of code into your terminal:
+
 `git clone https://github.com/lisaoude/Gifinder`
 
 <br/>
@@ -208,21 +216,24 @@ This can be done by typing the following line of code into your terminal:
 ### 2. :computer: Install an http server
 
 Next, we will have to install an http server.  
-Type the following line of code into your terminal:  
+Type the following line of code into your terminal:
+
 `npm install http-server`
 
 <br/>
 
 ### 3. :running: Run the app with our http server
 
-This can be done by typing the following line of code into your terminal:  
+This can be done by typing the following line of code into your terminal:
+
 `htpp-server PATH-TO-DIRECTORY/Gifinder`
 
 <br/>
 
 ### 4. :globe_with_meridians: Open browser and navigate to localhost
 
-Almost done! We just need to navigate to the localhost in the browser.  
+Almost done! We just need to navigate to the localhost in the browser.
+
 `http://127.0.0.1:5500/`
 
 <br/>
