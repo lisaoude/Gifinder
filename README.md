@@ -15,6 +15,8 @@ By clicking on one of the GIFs, you will see that GIF's title, posted time, orig
 
 <br/>
 
+I have also made a [Wiki](https://github.com/lisaoude/Gifinder/wiki), where I kept a weekly log, explained some things about map, filter & reduce and amde some JavaScript related annotations.
+
 <!-------------------------- New Paragraph -------------------------->
 
 ## :pushpin: Table of Contents
