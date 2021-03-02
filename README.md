@@ -102,7 +102,7 @@ This can be done by typing the following line of code into your terminal:
 
 <br/>
 
-### 2. Install an http server
+### 2. :computer: Install an http server
 
 Next, we will have to install an http server.  
 Type the following line of code into your terminal:  
@@ -110,21 +110,21 @@ Type the following line of code into your terminal:
 
 <br/>
 
-### 3. Run the app with our http server
+### 3. :running: Run the app with our http server
 
 This can be done by typing the following line of code into your terminal:  
 `htpp-server PATH-TO-DIRECTORY/Gifinder`
 
 <br/>
 
-### 4. Open browser and navigate to localhost
+### 4. :globe_with_meridians: Open browser and navigate to localhost
 
 Almost done! We just need to navigate to the localhost in the browser.  
 `http://127.0.0.1:5500/`
 
 <br/>
 
-## Sources
+## :books: Sources
 
 I have used the following sources while creating my Web App:
 
@@ -132,7 +132,7 @@ I have used the following sources while creating my Web App:
 
 <br/>
 
-## License
+## :closed_lock_with_key: License
 
 This repo is licensed as [MIT](https://github.com/lisaoude/Gifinder/blob/master/LICENSE.txt) by © Lisa Oude Elferink, 2021
 
@@ -140,7 +140,7 @@ This repo is licensed as [MIT](https://github.com/lisaoude/Gifinder/blob/master/
 
 <br/>
 
-## Next Steps
+## :telescope: Next Steps
 
 We all know creative developing projects are never _truly_ done..  
 These are some next steps that I would love to make:
