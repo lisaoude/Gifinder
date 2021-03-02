@@ -274,7 +274,7 @@ footer img {
 /*             LOADING STATE             */
 /*****************************************/
 .hide {
-  display: none;
+  visibility: hidden;
   z-index: -1;
 }
 
@@ -295,7 +295,7 @@ footer img {
   border-radius: 50%;
   border: 6px solid #fff;
   border-color: #fff transparent #fff transparent;
-  animation: loader 1.25s linear infinite;
+  animation: loader 0.8s linear infinite;
 }
 
 
@@ -325,17 +325,6 @@ footer img {
   }
 }
 
-/* fade out loader */
-@keyframes fade {
-  0% {
-    opacity: 100%
-  }
-  100% {
-    opacity: 0%;
-  }
-}
-
-
 
 /*****************************************/
 /*              SMALL SCREEN             */
@@ -349,7 +338,6 @@ footer img {
     display: inline-block;
     width: 80px;
     height: 80px;
-    animation: fade 3s;
   }
 
   #detailPage header {

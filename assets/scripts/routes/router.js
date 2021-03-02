@@ -27,6 +27,10 @@ export function router() {
       // if theres 'gif / a gif id' behind the '/'
     'gif/:id': (id) => {
 
+        // show loading state
+        loadingState()
+
+        
         // select main with class of homePage
         const removeHome = document.querySelector('#homePage')
        
