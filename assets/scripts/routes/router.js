@@ -1,7 +1,7 @@
 // importing elements
 import { homePage } from '../views/homePage.js'
 import { detailPage } from '../views/detailPage.js'
-import { loadingState } from '../views/loadingState.js'
+import { loadingState } from '../states/loadingState.js'
 
 
 export function router() {
@@ -30,7 +30,7 @@ export function router() {
         // show loading state
         loadingState()
 
-        
+
         // select main with class of homePage
         const removeHome = document.querySelector('#homePage')
        
