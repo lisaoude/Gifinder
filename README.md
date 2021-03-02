@@ -271,11 +271,13 @@ These are some next steps that I would love to make:
 I have used the following resources while creating my Web App:
 
 - Schepenaar, W. (2018, June 12). Server-side vs Client-side Routing - Wilbert Schepenaar, from [Medium](https://medium.com/@wilbo/server-side-vs-client-side-routing-71d710e9227f)
+- Blog, W. T. (2020). Understanding client side routing by implementing a router in Vanilla JS, from [Will Taylor](https://www.willtaylor.blog/client-side-routing-in-vanilla-js/)
+- Routie | Javascript hash router. (2016), from [Routie](http://projects.jga.me/routie/)
+- MDN. (2021, February 19). Using Fetch - Web APIs, from [MDN](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch)
+- MDN. (2021, February 19). Async await - Web APIs, from [MDN](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Asynchronous/Async_await)
 - Can I insert elements to the beginning of an element using .appendChild()? (2009, March 6), from [Stack Overflow](https://stackoverflow.com/questions/618089/can-i-insert-elements-to-the-beginning-of-an-element-using-appendchild)
 - MDN. (2021, February 19). Node.appendChild() - Web APIs, from [MDN](https://developer.mozilla.org/en-US/docs/Web/API/Node/appendChild)
 - MDN. (2021, February 19). Node.removeChild() Web APIs, from [MDN](https://developer.mozilla.org/en-US/docs/Web/API/Node/removeChild)
-- MDN. (2021, February 19). Using Fetch - Web APIs, from [MDN](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch)
-- Routie | Javascript hash router. (2016), from [Routie](http://projects.jga.me/routie/)
-- Blog, W. T. (2020). Understanding client side routing by implementing a router in Vanilla JS, from [Will Taylor](https://www.willtaylor.blog/client-side-routing-in-vanilla-js/)
-- MDN. (2021, February 19). Async await - Web APIs, from [MDN](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Asynchronous/Async_await)
 - Pure CSS Loader - Optimized Spinners for Web · Loading.io. (2020), from [Loading.io](https://loading.io/css/)
+- Complete list of github markdown emoji's. (2016), from [rxaviers](https://gist.github.com/rxaviers/7360908)
+- MDN. (2021, February 19). setTimeout() - Web APIs, from [MDN](https://developer.mozilla.org/en-US/docs/Web/API/WindowOrWorkerGlobalScope/setTimeout)
