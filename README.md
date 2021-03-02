@@ -126,7 +126,7 @@ Almost done! We just need to navigate to the localhost in the browser.
 
 ## Sources
 
-I have used the following sources while creathing my Web App:
+I have used the following sources while creating my Web App:
 
 - ...
 
@@ -134,7 +134,7 @@ I have used the following sources while creathing my Web App:
 
 ## License
 
-<!-- This repo is licensed as [MIT](**_NEEDS LINK_**) by © Lisa Oude Elferink, 2021 -->
+This repo is licensed as [MIT](https://github.com/lisaoude/Gifinder/blob/master/LICENSE.txt) by © Lisa Oude Elferink, 2021
 
 ...
 
