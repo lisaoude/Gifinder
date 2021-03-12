@@ -2,6 +2,10 @@
 import { dataHomePage } from '../modules/getData.js'
 import { reloadHomePage } from '../modules/reloadHome.js'
 
+import { showLoader } from '../states/showLoader.js'
+import { removeLoader } from '../states/removeLoader.js'
+
+
 // importing elements
 import {
   Body,
@@ -37,14 +41,23 @@ const gifsHomePage = async () => {
   // function reloadHomePage is carried out (reloadHome.js)
   reloadHomePage(data.data, section)
 
+  removeLoader()
+
   // IF the form gets submitted, data will be fetched again
   // but this time using the input value
   form.addEventListener('submit', async function (event) {
     event.preventDefault()
+
+    showLoader()
+
     data = await dataHomePage(input.value)
     reloadHomePage(data.data, section)
+
+    removeLoader()
   }) 
+
 }
+
 
 
 // append elements into html

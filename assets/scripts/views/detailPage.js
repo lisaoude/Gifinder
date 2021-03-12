@@ -14,6 +14,8 @@ import {
   backButton
 } from '../components/index.js'
 
+import { removeLoader } from '../states/removeLoader.js'
+
 
 // showing clicked gif and detail info
 export const detailPage = async (id) => {
@@ -21,6 +23,7 @@ export const detailPage = async (id) => {
   const response = await fetch(`https://api.giphy.com/v1/gifs/${id}?&api_key=JzbS3qH49ykiVKnHZx0z5M0gjNPVMbh3`)
   const data = await response.json()
 
+  removeLoader()
 
   // NOTE: I tried assigning fixed variables to the imported elements
   // outside of the function but that resulted in the previously

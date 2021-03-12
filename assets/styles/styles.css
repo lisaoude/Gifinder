@@ -273,11 +273,19 @@ footer img {
 /*****************************************/
 /*             LOADING STATE             */
 /*****************************************/
+span {
+  position: absolute;
+  top: 29em;
+  left: 8em;
+  color: #ffffff;
+}
+
 .hide {
   visibility: hidden;
   z-index: -1;
-}
+} 
 
+/* 
 #loader {
   position: absolute;
   top: 29em;
@@ -296,7 +304,7 @@ footer img {
   border: 6px solid #fff;
   border-color: #fff transparent #fff transparent;
   animation: loader 1.5s linear infinite;
-}
+} */ 
 
 
 /*****************************************/
@@ -331,13 +339,8 @@ footer img {
 /*****************************************/
 @media screen and (max-width: 660px) {
 
-  #loader {
-    position: absolute;
-    top: 29em;
-    left: 7em;
-    display: inline-block;
-    width: 80px;
-    height: 80px;
+  span {
+    left: 4em;
   }
 
   #detailPage header {
