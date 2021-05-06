@@ -121,7 +121,7 @@ During the development of Gifinder, I worked with modules for the first time. In
 
 #### Assets
 
-- Basically all code, except for my `index.html`, can be find inside this folder
+- Basically all code, except for my `index.html`, can be found inside this folder
 
 <br/>
 

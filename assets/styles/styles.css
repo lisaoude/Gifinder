@@ -277,13 +277,28 @@ span {
   position: absolute;
   top: 29em;
   left: 8em;
+  width: 90px;
+  height: 90px;
   color: #ffffff;
 }
 
-.hide {
+
+span::after {
+  content: " ";
+  display: block;
+  width: 65px;
+  height: 65px;
+  margin: 8px;
+  border-radius: 50%;
+  border: 6px solid #fff;
+  border-color: #fff transparent #fff transparent;
+  animation: loader 1.5s linear infinite;
+} 
+
+/* .hide {
   visibility: hidden;
   z-index: -1;
-} 
+}  */
 
 /* 
 #loader {

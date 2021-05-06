@@ -7,33 +7,33 @@ import { showLoader } from '../states/showLoader.js'
 
 export function router() {
 
-    routie({
-        '': (body) => {
+  routie({
+    '': (body) => {
 
-            showLoader()
+      showLoader()
 
-            const removeDetail = document.querySelector('#detailPage')
+      const removeDetail = document.querySelector('#detailPage')
 
-            if (removeDetail !== null) {
-                removeDetail.remove()
-            }
+      if (removeDetail !== null) {
+        removeDetail.remove()
+      }
 
-        homePage()
-        },
+      homePage()
+    },
 
-        'gif/:id': (id) => {
+    'gif/:id': (id) => {
 
-            showLoader()
+      showLoader()
 
-            // select main with class of homePage
-            const removeHome = document.querySelector('#homePage')
-       
-            // if the homePage is there, remove it
-            if (removeHome !== null) {
-                removeHome.remove()
-            }
+      // select main with class of homePage
+      const removeHome = document.querySelector('#homePage')
 
-        detailPage(id)
-        }
-    })
+      // if the homePage is there, remove it
+      if (removeHome !== null) {
+        removeHome.remove()
+      }
+
+      detailPage(id)
+    }
+  })
 }

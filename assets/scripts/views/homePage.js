@@ -54,7 +54,7 @@ const gifsHomePage = async () => {
     reloadHomePage(data.data, section)
 
     removeLoader()
-  }) 
+  })
 
 }
 

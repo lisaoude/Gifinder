@@ -12,9 +12,5 @@ export const showLoader = () => {
 
   const body = Body()
   const span = document.createElement('span')
-  let textnode = document.createTextNode('loading..')
-  
-  span.appendChild(textnode)
   body.appendChild(span)
 }
-  
