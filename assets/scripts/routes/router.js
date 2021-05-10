@@ -4,7 +4,6 @@ import { detailPage } from '../views/detailPage.js'
 import { showLoader } from '../states/showLoader.js'
 
 
-
 export function router() {
 
   routie({

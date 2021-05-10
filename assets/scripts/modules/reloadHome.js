@@ -10,7 +10,6 @@ export const reloadHomePage = (props, section) => {
 }
 
 
-
 // showing gifs in html
 const createGifs = (element, props) => {
 
@@ -23,7 +22,6 @@ const createGifs = (element, props) => {
     // add href to 'a' element
     clickable.href = `#gif/${item.id}`;
 
-
     // create an img element
     const actualGifs = document.createElement('img')
 
@@ -32,7 +30,6 @@ const createGifs = (element, props) => {
 
     // give each their own original title
     actualGifs.title = `${item.title}`
-
 
     clickable.appendChild(actualGifs)
     element.appendChild(clickable)

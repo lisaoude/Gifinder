@@ -9,4 +9,3 @@ export const removeLoader = () => {
 
   body.removeChild(span)
 }
-  

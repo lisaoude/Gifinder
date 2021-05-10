@@ -295,32 +295,6 @@ span::after {
   animation: loader 1.5s linear infinite;
 } 
 
-/* .hide {
-  visibility: hidden;
-  z-index: -1;
-}  */
-
-/* 
-#loader {
-  position: absolute;
-  top: 29em;
-  left: 10em;
-  width: 90px;
-  height: 90px;
-}
-
-#loader::after {
-  content: " ";
-  display: block;
-  width: 65px;
-  height: 65px;
-  margin: 8px;
-  border-radius: 50%;
-  border: 6px solid #fff;
-  border-color: #fff transparent #fff transparent;
-  animation: loader 1.5s linear infinite;
-} */ 
-
 
 /*****************************************/
 /*                ANIMATIONS             */

@@ -25,12 +25,8 @@ export const detailPage = async (id) => {
 
   removeLoader()
 
-  // NOTE: I tried assigning fixed variables to the imported elements
-  // outside of the function but that resulted in the previously
-  // loaded content not being removed before the next was loaded.
-
-  // I have decided to keep my code like this, because changing it
-  // would result in way more code.
+  // NOTE: assigning the fixed variables to the imported elements resulted in
+  // previously loaded content not being removed once the next was loaded.
 
   // assigning fixed variables to imported elements
   const body = Body()
@@ -67,9 +63,6 @@ export const detailPage = async (id) => {
   // view on giphy 
   let a = Href(data.data.bitly_url)
 
-
-  // NOTE 2: this has to happen inside the same function as well
-  // because the elements are assigning to the fixed variables inside this function
   // append elements into html
   body.appendChild(main)
   main.appendChild(header)
