@@ -9,7 +9,7 @@ import {
 
 // home: show either trending or searched for gifs
 // based on empty of filled input field
-export const dataHomePage = async (query) => {
+export const getData = async (query) => {
 
   // if the input field is empty
   if (query === '') {

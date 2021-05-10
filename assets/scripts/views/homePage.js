@@ -1,5 +1,5 @@
 // importing functions
-import { dataHomePage } from '../modules/getData.js'
+import { getData } from '../modules/getData.js'
 import { reloadHomePage } from '../modules/reloadHome.js'
 
 import { showLoader } from '../states/showLoader.js'
@@ -36,10 +36,11 @@ const gifsHomePage = async () => {
   // gets data from the input value (getData.js)
   // if input value is empty, the trending gifs will be shown (as declared in getData.js)
   // let, because the data changes
-  let data = await dataHomePage(input.value)
+  let data = await getData(input.value)
+  let filteredData = Object.values(data.data).filter(noSource => noSource.source !== '')
 
   // function reloadHomePage is carried out (reloadHome.js)
-  reloadHomePage(data.data, section)
+  reloadHomePage(filteredData, section)
 
   removeLoader()
 
@@ -50,8 +51,9 @@ const gifsHomePage = async () => {
 
     showLoader()
 
-    data = await dataHomePage(input.value)
-    reloadHomePage(data.data, section)
+    data = await getData(input.value)
+    let filteredData = Object.values(data.data).filter(noSource => noSource.source !== '')
+    reloadHomePage(filteredData, section)
 
     removeLoader()
   })
