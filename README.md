@@ -228,7 +228,7 @@ Type the following line of code into your terminal:
 
 This can be done by typing the following line of code into your terminal:
 
-`htpp-server PATH-TO-DIRECTORY/Gifinder`
+`http-server PATH-TO-DIRECTORY/Gifinder`
 
 <br/>
 
