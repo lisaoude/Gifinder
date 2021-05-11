@@ -211,7 +211,9 @@ import {
 Before we can get started, we'll need to clone this repo.  
 This can be done by typing the following line of code into your terminal:
 
-```git clone https://github.com/lisaoude/Gifinder```
+```
+git clone https://github.com/lisaoude/Gifinder
+```
 
 <br/>
 
@@ -220,7 +222,9 @@ This can be done by typing the following line of code into your terminal:
 Next, we will have to install an http server.  
 Type the following line of code into your terminal:
 
-```npm install http-server```
+```
+npm install http-server
+```
 
 <br/>
 
@@ -228,7 +232,9 @@ Type the following line of code into your terminal:
 
 This can be done by typing the following line of code into your terminal:
 
-```http-server PATH-TO-DIRECTORY/Gifinder```
+```
+http-server PATH-TO-DIRECTORY/Gifinder
+```
 
 <br/>
 
@@ -236,7 +242,9 @@ This can be done by typing the following line of code into your terminal:
 
 Almost done! We just need to navigate to the localhost in the browser.
 
-```http://127.0.0.1:5500/```
+```
+http://127.0.0.1:5500/
+```
 
 <br/>
 
