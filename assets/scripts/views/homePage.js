@@ -5,7 +5,6 @@ import { reloadHomePage } from '../modules/reloadHome.js'
 import { showLoader } from '../states/showLoader.js'
 import { removeLoader } from '../states/removeLoader.js'
 
-
 // importing elements
 import {
   Body,
@@ -17,7 +16,6 @@ import {
   Section,
   Footer
 } from '../components/index.js'
-
 
 // assigning imports to variables
 const body = Body()
@@ -59,8 +57,6 @@ const gifsHomePage = async () => {
   })
 
 }
-
-
 
 // append elements into html
 export const homePage = () => {

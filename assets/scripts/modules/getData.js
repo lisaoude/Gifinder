@@ -7,7 +7,7 @@ import {
   limit
 } from '../config/config.js'
 
-// home: show either trending or searched for gifs
+// show either trending or searched for gifs
 // based on empty of filled input field
 export const getData = async (query) => {
 

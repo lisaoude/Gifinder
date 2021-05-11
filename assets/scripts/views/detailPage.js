@@ -16,7 +16,6 @@ import {
 
 import { removeLoader } from '../states/removeLoader.js'
 
-
 // showing clicked gif and detail info
 export const detailPage = async (id) => {
 
@@ -62,6 +61,7 @@ export const detailPage = async (id) => {
 
   // view on giphy 
   let a = Href(data.data.bitly_url)
+
 
   // append elements into html
   body.appendChild(main)

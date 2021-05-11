@@ -11,8 +11,10 @@ export function router() {
 
       showLoader()
 
+      // select main with class of detailPage
       const removeDetail = document.querySelector('#detailPage')
 
+      // if the detailPage is there, remove it
       if (removeDetail !== null) {
         removeDetail.remove()
       }
